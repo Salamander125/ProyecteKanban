@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ListBoxSESSIO6/1.0.0": {
+        "runtime": {
+          "ListBoxSESSIO6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ListBoxSESSIO6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

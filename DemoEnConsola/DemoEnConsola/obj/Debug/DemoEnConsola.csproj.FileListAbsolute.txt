@@ -1,0 +1,7 @@
+C:\Users\carus\source\repos\ProyecteKanban\DemoEnConsola\DemoEnConsola\bin\Debug\DemoEnConsola.exe.config
+C:\Users\carus\source\repos\ProyecteKanban\DemoEnConsola\DemoEnConsola\bin\Debug\DemoEnConsola.exe
+C:\Users\carus\source\repos\ProyecteKanban\DemoEnConsola\DemoEnConsola\bin\Debug\DemoEnConsola.pdb
+C:\Users\carus\source\repos\ProyecteKanban\DemoEnConsola\DemoEnConsola\obj\Debug\DemoEnConsola.csproj.AssemblyReference.cache
+C:\Users\carus\source\repos\ProyecteKanban\DemoEnConsola\DemoEnConsola\obj\Debug\DemoEnConsola.csproj.CoreCompileInputs.cache
+C:\Users\carus\source\repos\ProyecteKanban\DemoEnConsola\DemoEnConsola\obj\Debug\DemoEnConsola.exe
+C:\Users\carus\source\repos\ProyecteKanban\DemoEnConsola\DemoEnConsola\obj\Debug\DemoEnConsola.pdb

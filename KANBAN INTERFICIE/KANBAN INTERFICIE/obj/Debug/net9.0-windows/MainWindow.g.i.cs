@@ -38,7 +38,7 @@ namespace KANBAN_INTERFICIE {
     /// <summary>
     /// MainWindow
     /// </summary>
-    public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
+    public partial class PissarraKanbanMainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
         #line 27 "..\..\..\MainWindow.xaml"
@@ -100,7 +100,7 @@ namespace KANBAN_INTERFICIE {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/KANBAN INTERFICIE;V1.0.0.0;component/mainwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/KANBAN INTERFICIE;component/mainwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MainWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -8,9 +8,9 @@ namespace KANBAN_INTERFICIE
 {
     public enum Status
     {
-        ToDo,
-        Doing,
-        Done
+        toDo,
+        enProgres,
+        acabat
     }
     public enum Prioritat
     {

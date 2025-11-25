@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\",
+  "WorkspaceRootPath": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\demoenconsola\\demoenconsola\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|solutionrelative:demoenconsola\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -12,6 +13,17 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\demoenconsola\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\demoenconsola\\demoenconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|solutionrelative:demoenconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\demoenconsola\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|solutionrelative:demoenconsola\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\demoenconsola\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 3ad553dd8f7b22cdbc367d64f30b0f96b049d650
       "RelativeMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|solutionrelative:demoenconsola\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,23 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 3,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> 3ad553dd8f7b22cdbc367d64f30b0f96b049d650
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Responsable.cs",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Responsable.cs",
+              "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Responsable.cs",
               "RelativeDocumentMoniker": "DemoEnConsola\\Responsable.cs",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Responsable.cs",
+              "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Responsable.cs",
               "RelativeToolTip": "DemoEnConsola\\Responsable.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -48,36 +56,25 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Ticket.cs",
               "RelativeDocumentMoniker": "DemoEnConsola\\Ticket.cs",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Ticket.cs",
+              "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Ticket.cs",
               "RelativeToolTip": "DemoEnConsola\\Ticket.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowCQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T08:48:33.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T08:48:33.263Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Program.cs",
               "RelativeDocumentMoniker": "DemoEnConsola\\Program.cs",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Program.cs",
+              "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Program.cs",
               "RelativeToolTip": "DemoEnConsola\\Program.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAcwL8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T08:48:21.878Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

@@ -14,8 +14,8 @@ namespace KANBAN_INTERFICIE
     }
     public enum Prioritat
     {
-        Baja,
-        Media,
+        Baixa,
+        Mitja,
         Alta
     }
     class Tiquet
@@ -42,13 +42,13 @@ namespace KANBAN_INTERFICIE
         }
 
         // Métodos getters
-        public int ObtenerCodigo() => codi;
-        public string ObtenerResponsable() => responsable;
-        public string ObtenerDescripcion() => descripcio;
-        public Status ObtenerEstado() => estat;
-        public string ObtenerFechaCreacion() => dataCreacio;
-        public string ObtenerFechaEstimadaFinalizacion() => dataEstimada_Finalitzacio;
-        public Prioritat ObtenerPrioridad() => prioritat;
+        public int ObtenirCodi() => codi;
+        public string ObtenirResponsable() => responsable;
+        public string ObtenirDescripcio() => descripcio;
+        public Status ObtenirEstat() => estat;
+        public string ObtenirDataCreacio() => dataCreacio;
+        public string ObtenirDataEstimadaFinalitzacio() => dataEstimada_Finalitzacio;
+        public Prioritat ObtenirPrioritat() => prioritat;
 
         // Métodos setters
         public void CanviarResponsable(string nuevoResponsable)
@@ -66,12 +66,12 @@ namespace KANBAN_INTERFICIE
             estat = (Status)nuevoEstado;
         }
 
-        public void CambiarFechaEstimadaFinalizacion(string nuevaFecha)
+        public void CanviarDataEstimadaFinalizacio(string nuevaFecha)
         {
             dataEstimada_Finalitzacio = nuevaFecha;
         }
 
-        public void CambiarPrioridad(Prioritat nuevaPrioridad)
+        public void CanviarPrioridad(Prioritat nuevaPrioridad)
         {
             prioritat = nuevaPrioridad;
         }

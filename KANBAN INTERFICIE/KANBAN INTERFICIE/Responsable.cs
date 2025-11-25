@@ -19,11 +19,11 @@ namespace KANBAN_INTERFICIE
             this.cognoms = cognoms;
         }
 
-        public int ObtenerCodigo() => codi;
-        public string ObtenerNombre() => nom;
-        public string ObtenerApellidos() => cognoms;
+        public int ObtenirCodi() => codi;
+        public string ObtenirNom() => nom;
+        public string ObtenirCognoms() => cognoms;
 
-        public void CambiarNombre(string nuevoNombre) => nom = nuevoNombre;
-        public void CambiarApellidos(string nuevosApellidos) => cognoms = nuevosApellidos;
+        public void CambiarNombre(string nouNom) => nom = nouNom;
+        public void CambiarApellidos(string NouCognom) => cognoms = NouCognom;
     }
 }

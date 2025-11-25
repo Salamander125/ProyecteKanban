@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\tiquet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\tiquet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -30,30 +30,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Tiquet.cs",
               "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\Tiquet.cs",
               "RelativeDocumentMoniker": "KANBAN INTERFICIE\\Tiquet.cs",
               "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\Tiquet.cs",
               "RelativeToolTip": "KANBAN INTERFICIE\\Tiquet.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAjwDAAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAD4v0kAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T15:15:12.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Responsable.cs",
               "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\Responsable.cs",
               "RelativeDocumentMoniker": "KANBAN INTERFICIE\\Responsable.cs",
               "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\Responsable.cs",
               "RelativeToolTip": "KANBAN INTERFICIE\\Responsable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T15:14:10.295Z",
               "EditorCaption": ""
@@ -72,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "KANBAN INTERFICIE\\MainWindow.xaml.cs",
@@ -85,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\MainWindow.xaml",
               "RelativeDocumentMoniker": "KANBAN INTERFICIE\\MainWindow.xaml",

@@ -1,80 +1,102 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoEnConsola
+namespace KANBAN_INTERFICIE
 {
-    public enum Estado
+    public enum Status
     {
         ToDo,
         Doing,
         Done
     }
-    public enum Prioridad
+    public enum Prioritat
     {
-        Baja,
-        Media,
+        Baixa,
+        Mitja,
         Alta
     }
-
-    public class Ticket
+    class Tiquet
     {
-        private int codigo;
+        // string connectionString = "Server=tu_servidor;Database=tu_base_de_datos;User ID=tu_usuario;Password=tu_contraseña;";
+
+        //using (SqlConnection connection = new SqlConnection(connectionString))
+        //{
+        //    connection.Open();
+        //}
+
+
+        //string query = "SELECT * FROM MiTabla;";
+        //using (SqlCommand command = new SqlCommand(query, connectionString))
+        //{
+        //    using (SqlDataReader reader = command.ExecuteReader())
+        //    {
+        //        while (reader.Read())
+        //        {
+        //            // Procesa los datos del reader
+        //        }
+        //    }
+        //}
+
+
+        //Usa ExecuteNonQuery() para comandos que no devuelven un conjunto de resultados(como INSERT, UPDATE, DELETE).
+        //Usa ExecuteReader() para ejecutar una consulta SELECT y obtener los resultados en un objeto SqlDataReader.
+        //Usa ExecuteScalar() para obtener el valor de la primera columna de la primera fila de un resultado.
+
+        private int codi;
         private string responsable;
-        private string descripcion;
-        private Estado estado;
-        private string fechaCreacion;
-        private string fechaEstimadaFinalizacion;
-        private Prioridad prioridad;
+        private string descripcio;
+        private Status estat;
+        private string dataCreacio;
+        private string dataEstimada_Finalitzacio;
+        private Prioritat prioritat;
 
         // Constructor
-        public Ticket(int codigo, string responsable, string descripcion, Estado estado,
-                      string fechaCreacion, string fechaEstimadaFinalizacion, Prioridad prioridad)
+        public Tiquet(int codi, string responsable, string descripcio, Status estat,
+                      string dataCreacio, string dataEstimada_Finalitzacio, Prioritat prioritat)
         {
-            this.codigo = codigo;
+            this.codi = codi;
             this.responsable = responsable;
-            this.descripcion = descripcion;
-            this.estado = estado;
-            this.fechaCreacion = fechaCreacion;
-            this.fechaEstimadaFinalizacion = fechaEstimadaFinalizacion;
-            this.prioridad = prioridad;
+            this.descripcio = descripcio;
+            this.estat = estat;
+            this.dataCreacio = dataCreacio;
+            this.dataEstimada_Finalitzacio = dataEstimada_Finalitzacio;
+            this.prioritat = prioritat;
         }
 
         // Métodos getters
-        public int ObtenerCodigo() => codigo;
-        public string ObtenerResponsable() => responsable;
-        public string ObtenerDescripcion() => descripcion;
-        public Estado ObtenerEstado() => estado;
-        public string ObtenerFechaCreacion() => fechaCreacion;
-        public string ObtenerFechaEstimadaFinalizacion() => fechaEstimadaFinalizacion;
-        public Prioridad ObtenerPrioridad() => prioridad;
+        public int ObtenirCodi() => codi;
+        public string ObtenirResponsable() => responsable;
+        public string ObtenirDescripcio() => descripcio;
+        public Status ObtenirEstat() => estat;
+        public string ObtenirDataCreacio() => dataCreacio;
+        public string ObtenirDataEstimadaFinalitzacio() => dataEstimada_Finalitzacio;
+        public Prioritat ObtenirPrioritat() => prioritat;
 
         // Métodos setters
-        public void CambiarResponsable(string nuevoResponsable)
+        public void CanviarResponsable(string nuevoResponsable)
         {
             responsable = nuevoResponsable;
         }
-
-        public void CambiarDescripcion(string nuevaDescripcion)
+        public void CanviarDescripcio(string nuevaDescripcion)
         {
-            descripcion = nuevaDescripcion;
+            descripcio = nuevaDescripcion;
         }
-
-        public void CambiarEstado(int nuevoEstado)
+        public void CanviarEstat(int nuevoEstado)
         {
-            estado = (Estado)nuevoEstado;
+            estat = (Status)nuevoEstado;
         }
-
-        public void CambiarFechaEstimadaFinalizacion(string nuevaFecha)
+        public void CanviarDataEstimadaFinalizacio(string nuevaFecha)
         {
-            fechaEstimadaFinalizacion = nuevaFecha;
+            dataEstimada_Finalitzacio = nuevaFecha;
         }
-
-        public void CambiarPrioridad(int nuevaPrioridad)
+        public void CanviarPrioridad(Prioritat nuevaPrioridad)
         {
-            prioridad = (Prioridad)nuevaPrioridad;
+            prioritat = nuevaPrioridad;
         }
     }
 }

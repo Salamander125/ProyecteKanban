@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KANBAN INTERFICIE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71a0829e1bc5114acd41f22dd549314fb5bc1b4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e978c343751b28313aa81297bdca55a2e2859de")]
 [assembly: System.Reflection.AssemblyProductAttribute("KANBAN INTERFICIE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KANBAN INTERFICIE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

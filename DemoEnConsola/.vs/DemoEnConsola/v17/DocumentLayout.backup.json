@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\demoenconsola\\demoenconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|solutionrelative:demoenconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\demoenconsola\\demoenconsola\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|solutionrelative:demoenconsola\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\demoenconsola\\demoenconsola\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\demoenconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|solutionrelative:demoenconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\demoenconsola\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBC717A-51E4-4043-8721-653425A6C698}|DemoEnConsola\\DemoEnConsola.csproj|solutionrelative:demoenconsola\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,25 +42,24 @@
               "RelativeToolTip": "DemoEnConsola\\Responsable.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T08:48:44.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T08:48:44.457Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Ticket.cs",
               "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Ticket.cs",
               "RelativeDocumentMoniker": "DemoEnConsola\\Ticket.cs",
               "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Ticket.cs",
               "RelativeToolTip": "DemoEnConsola\\Ticket.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowD0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T08:48:33.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\DemoEnConsola\\DemoEnConsola\\Program.cs",
               "RelativeDocumentMoniker": "DemoEnConsola\\Program.cs",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "DemoEnConsola\\Program.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAcwL8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T08:48:21.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-18T08:48:21.878Z"
             }
           ]
         },

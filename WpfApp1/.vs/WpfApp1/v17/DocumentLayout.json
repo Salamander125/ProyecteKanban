@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\",
+  "WorkspaceRootPath": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapp1\\wpfapp1\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapp1\\wpfapp1\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\wpfapp1\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapp1\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\wpfapp1\\wpfapp1\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\wpfapp1\\wpfapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|solutionrelative:wpfapp1\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1F7E0D58-8C56-43BA-BF7F-6F734673E516}|WpfApp1\\WpfApp1.csproj|solutionrelative:WpfApp1\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -29,73 +33,66 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\App.xaml",
+              "RelativeDocumentMoniker": "WpfApp1\\App.xaml",
+              "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\App.xaml*",
+              "RelativeToolTip": "WpfApp1\\App.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-25T15:07:57.494Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Responsable.cs",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\Responsable.cs",
+              "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\Responsable.cs",
               "RelativeDocumentMoniker": "WpfApp1\\Responsable.cs",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\Responsable.cs",
+              "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\Responsable.cs",
               "RelativeToolTip": "WpfApp1\\Responsable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T08:42:09.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\Ticket.cs",
               "RelativeDocumentMoniker": "WpfApp1\\Ticket.cs",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\Ticket.cs",
+              "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\Ticket.cs",
               "RelativeToolTip": "WpfApp1\\Ticket.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDwAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAA6wEcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T08:28:31.962Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml",
               "RelativeToolTip": "WpfApp1\\MainWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-12T18:16:34.602Z"
+              "WhenOpened": "2025-11-12T18:16:34.602Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApp1\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\WpfApp1\\WpfApp1\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfApp1\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T18:16:34.119Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-11-12T18:16:34.119Z"
             }
           ]
         }

@@ -12,6 +12,12 @@ namespace DemoEnConsola
         Doing,
         Done
     }
+    public enum Prioridad
+    {
+        Baja,
+        Media,
+        Alta
+    }
 
     public class Ticket
     {
@@ -21,11 +27,11 @@ namespace DemoEnConsola
         private Estado estado;
         private string fechaCreacion;
         private string fechaEstimadaFinalizacion;
-        private int prioridad;
+        private Prioridad prioridad;
 
         // Constructor
         public Ticket(int codigo, string responsable, string descripcion, Estado estado,
-                      string fechaCreacion, string fechaEstimadaFinalizacion, int prioridad)
+                      string fechaCreacion, string fechaEstimadaFinalizacion, Prioridad prioridad)
         {
             this.codigo = codigo;
             this.responsable = responsable;
@@ -43,7 +49,7 @@ namespace DemoEnConsola
         public Estado ObtenerEstado() => estado;
         public string ObtenerFechaCreacion() => fechaCreacion;
         public string ObtenerFechaEstimadaFinalizacion() => fechaEstimadaFinalizacion;
-        public int ObtenerPrioridad() => prioridad;
+        public Prioridad ObtenerPrioridad() => prioridad;
 
         // Métodos setters
         public void CambiarResponsable(string nuevoResponsable)
@@ -68,8 +74,7 @@ namespace DemoEnConsola
 
         public void CambiarPrioridad(int nuevaPrioridad)
         {
-            prioridad = nuevaPrioridad;
+            prioridad = (Prioridad)nuevaPrioridad;
         }
     }
-
 }

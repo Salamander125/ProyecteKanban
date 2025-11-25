@@ -19,3 +19,23 @@ C:\Users\userino\source\repos\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9
 C:\Users\userino\source\repos\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\ref\KANBAN INTERFICIE.dll
 C:\Users\userino\source\repos\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE_MarkupCompile.lref
 C:\Users\userino\source\repos\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\App.baml
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\bin\Debug\net9.0-windows\KANBAN INTERFICIE.exe
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\bin\Debug\net9.0-windows\KANBAN INTERFICIE.deps.json
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\bin\Debug\net9.0-windows\KANBAN INTERFICIE.runtimeconfig.json
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\bin\Debug\net9.0-windows\KANBAN INTERFICIE.dll
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\bin\Debug\net9.0-windows\KANBAN INTERFICIE.pdb
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE_MarkupCompile.cache
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.g.resources
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.AssemblyInfoInputs.cache
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.AssemblyInfo.cs
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.csproj.CoreCompileInputs.cache
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.sourcelink.json
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.dll
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\refint\KANBAN INTERFICIE.dll
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.pdb
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\KANBAN INTERFICIE.genruntimeconfig.cache
+C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\ref\KANBAN INTERFICIE.dll

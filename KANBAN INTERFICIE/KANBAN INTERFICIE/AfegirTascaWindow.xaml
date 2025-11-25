@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KANBAN_INTERFICIE"
         mc:Ignorable="d"
-        Title="Afegir/Modificar Tasca" Height="441" Width="500"
+        Title="Afegir/Modificar Tasca" Height="477" Width="500"
         WindowStartupLocation="CenterScreen" 
         ResizeMode="NoResize" 
         >

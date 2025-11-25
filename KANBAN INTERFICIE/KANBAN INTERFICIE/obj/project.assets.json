@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\userino\\source\\repos\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj",
+      "projectUniqueName": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj",
       "projectName": "KANBAN INTERFICIE",
-      "projectPath": "C:\\Users\\userino\\source\\repos\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj",
+      "projectPath": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj",
       "packagesPath": "C:\\Users\\userino\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\userino\\source\\repos\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\obj\\",
+      "outputPath": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\userino\\AppData\\Roaming\\NuGet\\NuGet.Config",

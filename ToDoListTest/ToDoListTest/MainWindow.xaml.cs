@@ -26,7 +26,8 @@ namespace ToDoListTest
             ListaTIckets.Items.Add(new ButtonData
             {
                 Title = IntroTitle.Text,
-                Description = IntroDescription.Text
+                Description = IntroDescription.Text,
+                ColorPrioritat = "Red"
             });
         }
 
@@ -38,7 +39,9 @@ namespace ToDoListTest
         private void AccesoNuevaVentana(object sender, RoutedEventArgs e)
         {
             new Eliminar().ShowDialog();
-            ButtonData button = sender as ButtonData;
+            //ButtonData button = sender as ButtonData;
+            Button btn = sender as Button;
+            ButtonData data = btn.DataContext as ButtonData;
         }
     }
     public class ButtonData
@@ -46,5 +49,6 @@ namespace ToDoListTest
         public string Title { get; set; }
         public string Description { get; set; }
         public string Codigo { get; set; }
+        public string ColorPrioritat { get; set; }
     }
 }

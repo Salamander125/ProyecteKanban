@@ -4,26 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\
+C:\Users\userino\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\obj\Debug\net9.0-windows\
 KANBAN_INTERFICIE
 none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-<<<<<<< HEAD
-C:\Users\carus\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\App.xaml
-11407045341
-
-8450164127
-200-1531957912
-MainWindow.xaml;
-=======
 C:\Users\userino\source\repos\ProyecteKanban\KANBAN INTERFICIE\KANBAN INTERFICIE\App.xaml
 3-401516554
 
 101465759347
 2001466749558
 AfegirTascaWindow.xaml;DetallsTascaWindow.xaml;PissarraKanban_MainWindow.xaml;
->>>>>>> 3ad553dd8f7b22cdbc367d64f30b0f96b049d650
 
 True
 

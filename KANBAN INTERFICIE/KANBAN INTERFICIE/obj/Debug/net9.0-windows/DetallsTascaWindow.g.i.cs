@@ -125,7 +125,7 @@ namespace KANBAN_INTERFICIE {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/KANBAN INTERFICIE;component/detallstascawindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/KANBAN INTERFICIE;V1.0.0.0;component/detallstascawindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\DetallsTascaWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -101,7 +101,7 @@ namespace KANBAN_INTERFICIE {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/KANBAN INTERFICIE;component/afegirtascawindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/KANBAN INTERFICIE;V1.0.0.0;component/afegirtascawindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AfegirTascaWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

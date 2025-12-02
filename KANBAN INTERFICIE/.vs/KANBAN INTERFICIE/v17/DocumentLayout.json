@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\detallstascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\detallstascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\detallstascawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\detallstascawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\detallstascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\detallstascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\afegirtascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,12 +38,11 @@
               "RelativeToolTip": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T18:58:15.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T18:58:15.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DetallsTascaWindow.xaml",
               "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\DetallsTascaWindow.xaml",
               "RelativeDocumentMoniker": "KANBAN INTERFICIE\\DetallsTascaWindow.xaml",
@@ -62,8 +61,7 @@
               "ToolTip": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml",
               "RelativeToolTip": "KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-25T17:47:25.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T17:47:25.306Z"
             }
           ]
         },
@@ -73,7 +71,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DetallsTascaWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\userino\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
               "RelativeDocumentMoniker": "KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",

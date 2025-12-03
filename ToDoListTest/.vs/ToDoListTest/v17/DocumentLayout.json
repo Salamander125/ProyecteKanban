@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\carus\\source\\repos\\ToDoListTest\\",
+  "WorkspaceRootPath": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\ToDoListTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02EA0041-BF4A-4866-8462-AE35061522CD}|ToDoListTest\\ToDoListTest.csproj|C:\\Users\\carus\\source\\repos\\ToDoListTest\\todolisttest\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{02EA0041-BF4A-4866-8462-AE35061522CD}|ToDoListTest\\ToDoListTest.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\todolisttest\\todolisttest\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02EA0041-BF4A-4866-8462-AE35061522CD}|ToDoListTest\\ToDoListTest.csproj|solutionrelative:todolisttest\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02EA0041-BF4A-4866-8462-AE35061522CD}|ToDoListTest\\ToDoListTest.csproj|c:\\users\\carus\\source\\repos\\todolisttest\\todolisttest\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{02EA0041-BF4A-4866-8462-AE35061522CD}|ToDoListTest\\ToDoListTest.csproj|C:\\Users\\carus\\source\\repos\\ProyecteKanban\\ToDoListTest\\todolisttest\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{02EA0041-BF4A-4866-8462-AE35061522CD}|ToDoListTest\\ToDoListTest.csproj|solutionrelative:todolisttest\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{02EA0041-BF4A-4866-8462-AE35061522CD}|ToDoListTest\\ToDoListTest.csproj|c:\\users\\carus\\source\\repos\\todolisttest\\todolisttest\\eliminar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{02EA0041-BF4A-4866-8462-AE35061522CD}|ToDoListTest\\ToDoListTest.csproj|solutionrelative:todolisttest\\eliminar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,39 +30,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Eliminar.xaml",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ToDoListTest\\ToDoListTest\\Eliminar.xaml",
-              "RelativeDocumentMoniker": "ToDoListTest\\Eliminar.xaml",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ToDoListTest\\ToDoListTest\\Eliminar.xaml",
-              "RelativeToolTip": "ToDoListTest\\Eliminar.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-25T18:45:05.726Z",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\ToDoListTest\\ToDoListTest\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ToDoListTest\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\ToDoListTest\\ToDoListTest\\MainWindow.xaml.cs",
+              "RelativeToolTip": "ToDoListTest\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAnwD8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T17:39:58.01Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ToDoListTest\\ToDoListTest\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\ToDoListTest\\ToDoListTest\\MainWindow.xaml",
               "RelativeDocumentMoniker": "ToDoListTest\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ToDoListTest\\ToDoListTest\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\ToDoListTest\\ToDoListTest\\MainWindow.xaml",
               "RelativeToolTip": "ToDoListTest\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-11-25T17:39:58.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ToDoListTest\\ToDoListTest\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ToDoListTest\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\carus\\source\\repos\\ToDoListTest\\ToDoListTest\\MainWindow.xaml.cs",
-              "RelativeToolTip": "ToDoListTest\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAACcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-25T17:39:58.01Z",
               "EditorCaption": ""
             }
           ]

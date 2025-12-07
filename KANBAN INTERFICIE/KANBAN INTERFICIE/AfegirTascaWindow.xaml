@@ -11,9 +11,10 @@
         >
     <Grid Margin="20">
         <StackPanel>
-            <TextBlock Text="Descripció"/>
+            <TextBlock Text="Descripció"/> <!-- DESCRIPCIO -->
             <TextBox Name="DescriptionBox" Height="60" TextWrapping="Wrap"/>
 
+            <!-- PRIORITAT ComboBox -->
             <TextBlock Text="Prioritat" Margin="0 10 0 0"/>
             <ComboBox Name="PriorityBox">
                 <ComboBoxItem Content="Sense prioritat"/>
@@ -22,16 +23,18 @@
                 <ComboBoxItem Content="Alta"/>
             </ComboBox>
 
+            <!-- RESPONSABLE ComboBox -->
             <TextBlock Text="Responsable" Margin="0 10 0 0"/>
             <ComboBox Name="ResponsibleBox">
                 <ComboBoxItem Content="(Sense assignar)"/>
             </ComboBox>
 
+            <!-- DATA PREVISTA DatePicker -->
             <TextBlock Text="Data prevista de finalització" Margin="0 10 0 0"/>
-            <DatePicker Name="DataFinalitzacioPicker" SelectedDateFormat="Long">
+            <DatePicker Name="DataFinalitzacioPicker" SelectedDateFormat="Long"/>
 
-            </DatePicker>
 
+            <!-- STATUS ComboBox -->
             <TextBlock Text="Status" Margin="0 10 0 0"/>
             <ComboBox Name="StatusBox">
                 <ComboBoxItem Content="To Do"/>
@@ -39,6 +42,8 @@
                 <ComboBoxItem Content="Done"/>
             </ComboBox>
 
+
+            <!-- BOTONS Guardar/Cancelar -->
             <WrapPanel Margin="0,20,0,0">
                 <Button Name="SaveButton" Content="💾 Guardar Dades" Height="52" Width="248" Click="SaveButton_Click" />
                 <Button x:Name="CancelButton" Content="❌ Cancelar Operacio" Height="52" Width="188" Click="CancelarOperacio"/>

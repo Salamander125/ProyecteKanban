@@ -23,37 +23,41 @@ namespace KANBAN_INTERFICIE
 
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TiquetButton_Click(object sender, RoutedEventArgs e)
         {
             if (sender is Button btn)
             {
-                Tiquet t = btn.DataContext as Tiquet;
-                if (t != null)
+                Tiquet tiquetQue_sEnvia = btn.DataContext as Tiquet;
+                if (tiquetQue_sEnvia != null)
                 {
-                    new DetallsTascaWindow(t).ShowDialog();
+                    new DetallsTascaWindow(tiquetQue_sEnvia).ShowDialog();
                 }
             }
         }
         
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void AfegirTascaButton_Click(object sender, RoutedEventArgs e)
         {
             AfegirTascaWindow wnd = new AfegirTascaWindow(this);
             wnd.ShowDialog();
         }
 
-        internal void AfegirTiquet(Tiquet t)
+        /// <summary>
+        /// Afegeix un tiquet al panell on pertany (ToDo/InProgress/Finished).
+        /// </summary>
+        /// <param name="tiquet"></param>
+        internal void AfegirTiquet(Tiquet tiquet)
         {
-            switch (t.estat)
+            switch (tiquet.estat)
             {
                 case Status.toDo:
-                    ListaToDo.Items.Add(t);
+                    ListaToDo.Items.Add(tiquet);
                     break;
                 case Status.enProgres:
-                    InProgressItems.Items.Add(t);
+                    InProgressItems.Items.Add(tiquet);
                     break;
                 case Status.acabat:
-                    DoneItems.Items.Add(t);
+                    DoneItems.Items.Add(tiquet);
                     break;
             }
         }

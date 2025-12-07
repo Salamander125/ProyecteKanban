@@ -23,7 +23,7 @@ namespace KANBAN_INTERFICIE
         public string ObtenirNom() => nom;
         public string ObtenirCognoms() => cognoms;
 
-        public void CambiarNombre(string nouNom) => nom = nouNom;
-        public void CambiarApellidos(string NouCognom) => cognoms = NouCognom;
+        public void CanviarNom(string nouNom) => nom = nouNom;
+        public void CanviarCognoms(string NouCognom) => cognoms = NouCognom;
     }
 }

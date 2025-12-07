@@ -5,38 +5,49 @@
 
     <Grid  Margin="10">
 
+        <!-- DOS files:
+             - Superior: columnes del kanban
+             - Inferior: Actual zona de gestió -->
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="180"/>
         </Grid.RowDefinitions>
 
+        <!-- Tres columnes per a les tres llistes:
+             To Do – En Progrés – Acabat -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        
         <!-- SEPARADOR DE COLUMNES-->
         <GridSplitter HorizontalAlignment="Center" Height="385" VerticalAlignment="Center" Width="1" Background="#7E000000" Grid.ColumnSpan="2"/>
         <GridSplitter HorizontalAlignment="Left" Height="385" VerticalAlignment="Top" Width="1" Background="#7F000000" Grid.Column="2" Grid.RowSpan="2"/>
 
 
-
-        <!-- LLISTA TO DO-->
+        <!-- ============================
+                   LLISTA "TO DO"
+             ============================ -->
         <StackPanel Grid.Column="0" Margin="5">
-            <TextBlock Text="To Do" FontSize="18" FontWeight="Bold"
+            <!-- Titol de la columna-->
+            <TextBlock Text="To Do" FontSize="18" FontWeight="Bold" 
                        HorizontalAlignment="Center" Margin="0 0 0 10" FontFamily="Segoe UI Variable Small Semibold" TextDecorations="Underline"/>
 
+            <!-- Llistat de tasques (ListView) -->
             <ListView Name="ListaToDo" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+
+                <!-- Les targetes es col·loquen dins un WrapPanel -->
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel />
                     </ItemsPanelTemplate>
                 </ListView.ItemsPanel>
 
+                <!-- Plantilla de Disseny visual de cada targeta -->
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Button Click="Button_Click"
+                        <Button Click="TiquetButton_Click"
                             MinWidth="50"
                             MinHeight="30"
                             Margin="-1,-1,0,0"
@@ -70,7 +81,7 @@
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Button Click="Button_Click"
+                        <Button Click="TiquetButton_Click"
                             MinWidth="50"
                             MinHeight="30"
                             Margin="-1,-1,0,0"
@@ -104,7 +115,7 @@
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Button Click="Button_Click"
+                        <Button Click="TiquetButton_Click"
                             MinWidth="50"
                             MinHeight="30"
                             Margin="-1,-1,0,0"
@@ -171,7 +182,7 @@
 
                     <!-- Buttons -->
                     <StackPanel Grid.Column="3" Margin="10,0,0,0">
-                        <Button Content="Afegir tasca" Margin="0 5 0 0" HorizontalAlignment="Center" Height="40" Width="125" FontFamily="MADE TOMMY" Click="Button_Click_1"/>
+                        <Button Content="Afegir tasca" Margin="0 5 0 0" HorizontalAlignment="Center" Height="40" Width="125" FontFamily="MADE TOMMY" Click="AfegirTascaButton_Click"/>
                         <Button Content="Gestio de&#xD;&#xA;Responsables" Margin="0 5 0 0" HorizontalAlignment="Center" Height="40" Width="125" FontFamily="MADE TOMMY"/>
                     </StackPanel>
 

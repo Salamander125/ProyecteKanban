@@ -139,7 +139,7 @@ namespace KANBAN_INTERFICIE {
             case 10:
             
             #line 174 "..\..\..\PissarraKanban_MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_1);
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.AfegirTascaButton_Click);
             
             #line default
             #line hidden
@@ -160,7 +160,7 @@ namespace KANBAN_INTERFICIE {
             case 2:
             
             #line 39 "..\..\..\PissarraKanban_MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.TiquetButton_Click);
             
             #line default
             #line hidden
@@ -168,7 +168,7 @@ namespace KANBAN_INTERFICIE {
             case 4:
             
             #line 73 "..\..\..\PissarraKanban_MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.TiquetButton_Click);
             
             #line default
             #line hidden
@@ -176,7 +176,7 @@ namespace KANBAN_INTERFICIE {
             case 6:
             
             #line 107 "..\..\..\PissarraKanban_MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.TiquetButton_Click);
             
             #line default
             #line hidden

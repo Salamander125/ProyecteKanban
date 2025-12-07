@@ -35,22 +35,22 @@ namespace KANBAN_INTERFICIE
             //Aqui es defineixen tots els camps del formulari, amb els valors del tiquet que hem obert.
             //Si hi ha algun camp nul, llavors NO es recupera, o es substitueix per un string.
 
-            idText.Text = instanciaTiquet.codi_id.ToString(); // ID
+            idText.Text = instanciaTiquet.ObtenirCodi().ToString(); // ID
 
 
             if (instanciaTiquet.Description != null)
-                DescriptionText.Text = instanciaTiquet.Description; // DESCRIPCIÓ
+                DescriptionText.Text = instanciaTiquet.ObtenirDescripcio(); // DESCRIPCIÓ
             else
                 DescriptionText.Text = "<{Sense Descripció}>";
 
             if (instanciaTiquet.DataCreacio != null)
-                creationDate.SelectedDate = DateTime.Parse(instanciaTiquet.DataCreacio); // DATA CREACIO
+                creationDate.SelectedDate = DateTime.Parse(instanciaTiquet.ObtenirDataCreacio()); // DATA CREACIO
 
             if (instanciaTiquet.DataEstimadaFinalitzacio != null) // DATA ESTIMADA FINALITZACIO
-                expectedDate.SelectedDate = DateTime.Parse(instanciaTiquet.DataEstimadaFinalitzacio);
+                expectedDate.SelectedDate = DateTime.Parse(instanciaTiquet.ObtenirDataEstimadaFinalitzacio());
 
             if (instanciaTiquet.Responsable != null)
-                ResponsibleText.Text = instanciaTiquet.Responsable; // RESPONSABLE
+                ResponsibleText.Text = instanciaTiquet.ObtenirResponsable(); // RESPONSABLE
             else
                 ResponsibleText.Text = "<{Responsable Indefinit}>";
 

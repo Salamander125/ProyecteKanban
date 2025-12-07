@@ -27,6 +27,8 @@ namespace KANBAN_INTERFICIE
         private string dataEstimada_Finalitzacio;
         private Prioritat prioritat;
 
+
+        //Constructor que s'utilitza per fer tiquets nous.
         public Tiquet(int codi, string responsable, string descripcio, Status estat,
                       string dataCreacio, string dataEstimada_Finalitzacio, Prioritat prioritat)
         {

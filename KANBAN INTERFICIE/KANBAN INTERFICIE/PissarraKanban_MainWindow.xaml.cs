@@ -21,39 +21,41 @@ namespace KANBAN_INTERFICIE
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e) // Mostra el text sencer quan es clica.
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //if (sender is Button btn)            
-            //MessageBox.Show($"Button pressed: {btn.Content}");
-            //var task = (sender as Button).DataContext as TaskItem;
-            //var win = new DetallsTascaWindow(task);
-            //win.ShowDialog();
-            new DetallsTascaWindow().ShowDialog();
-
-
-        }
-
-
-        private void Button_MouseMove(object sender, MouseEventArgs  e) //Mostra la prioritat segons el color del botó, quan el mouse es a sobre del botó
-        {
-            var btn = (Button)sender;
-
-            // The hex color you want to detect
-            Color targetColor = (Color)ColorConverter.ConvertFromString("#7C2BE3E3"); //COLOR EN HEXADECIMAL
-
-            // Check mouse drag + color
-            if (e.LeftButton == MouseButtonState.Pressed &&
-                btn.Background is SolidColorBrush brush &&
-                brush.Color == targetColor)
+            if (sender is Button btn)
             {
-                btn.ToolTip = "You are dragging over a red button!";
-                ToolTipService.SetIsEnabled(btn, true);
+                Tiquet t = btn.DataContext as Tiquet;
+                if (t != null)
+                {
+                    new DetallsTascaWindow(t).ShowDialog();
+                }
             }
         }
+        
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            new AfegirTascaWindow().ShowDialog();
+            AfegirTascaWindow wnd = new AfegirTascaWindow(this);
+            wnd.ShowDialog();
+        }
+
+        internal void AfegirTiquet(Tiquet t)
+        {
+            switch (t.estat)
+            {
+                case Status.toDo:
+                    ListaToDo.Items.Add(t);
+                    break;
+                case Status.enProgres:
+                    InProgressItems.Items.Add(t);
+                    break;
+                case Status.acabat:
+                    DoneItems.Items.Add(t);
+                    break;
+            }
         }
     }
 }

@@ -28,8 +28,8 @@
             </ComboBox>
 
             <TextBlock Text="Data prevista de finalització" Margin="0 10 0 0"/>
-            <DatePicker SelectedDateFormat="Long">
-                
+            <DatePicker Name="DataFinalitzacioPicker" SelectedDateFormat="Long">
+
             </DatePicker>
 
             <TextBlock Text="Status" Margin="0 10 0 0"/>
@@ -40,8 +40,8 @@
             </ComboBox>
 
             <WrapPanel Margin="0,20,0,0">
-                <Button Name="SaveButton" Content="💾 Guardar Dades" Height="52" Width="248" />
-                <Button x:Name="CancelButton" Content="❌ Cancelar Operacio" Height="52" Width="188"/>
+                <Button Name="SaveButton" Content="💾 Guardar Dades" Height="52" Width="248" Click="SaveButton_Click" />
+                <Button x:Name="CancelButton" Content="❌ Cancelar Operacio" Height="52" Width="188" Click="CancelarOperacio"/>
             </WrapPanel>
 
         </StackPanel>

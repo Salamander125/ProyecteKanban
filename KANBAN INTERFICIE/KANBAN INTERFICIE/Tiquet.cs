@@ -1,34 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Media;
 
 namespace KANBAN_INTERFICIE
 {
     public enum Status
     {
-        toDo,
-        enProgres,
-        acabat
+        toDo = 0,
+        enProgres = 1,
+        acabat = 2,
     }
+
     public enum Prioritat
     {
-        Baixa,
-        Mitja,
-        Alta
+        Baixa = 0,
+        Mitja = 1,
+        Alta = 2,
+        SensePrioritat = 3,
     }
+
     class Tiquet
     {
         private int codi;
         private string responsable;
         private string descripcio;
-        private Status estat;
+        public Status estat;
         private string dataCreacio;
         private string dataEstimada_Finalitzacio;
         private Prioritat prioritat;
 
-        // Constructor
         public Tiquet(int codi, string responsable, string descripcio, Status estat,
                       string dataCreacio, string dataEstimada_Finalitzacio, Prioritat prioritat)
         {
@@ -41,39 +39,44 @@ namespace KANBAN_INTERFICIE
             this.prioritat = prioritat;
         }
 
-        // Métodos getters
+        // Propietats públiques per facilitar binding i accés
+        public int codi_id => codi;
+        public string Description => descripcio;
+        public string Responsable => responsable;
+        public Status Estat => estat;
+        public string DataCreacio => dataCreacio;
+        public string DataEstimadaFinalitzacio => dataEstimada_Finalitzacio;
+        public Prioritat PrioritatTiquet => prioritat;
+
+        // Color segons prioritat (binding al XAML)
+        public SolidColorBrush ColorPrioritat
+        {
+            get
+            {
+                switch (prioritat)
+                {
+                    case Prioritat.Alta: return new SolidColorBrush(Colors.Red);
+                    case Prioritat.Mitja: return new SolidColorBrush(Colors.Orange);
+                    case Prioritat.Baixa: return new SolidColorBrush(Colors.LightGreen);
+                    default: return new SolidColorBrush(Colors.LightGray);
+                }
+            }
+        }
+
+        // Getters existents
         public int ObtenirCodi() => codi;
         public string ObtenirResponsable() => responsable;
         public string ObtenirDescripcio() => descripcio;
-        public Status ObtenirEstat() => estat;
+        public int ObtenirEstat() => (int)estat;
         public string ObtenirDataCreacio() => dataCreacio;
         public string ObtenirDataEstimadaFinalitzacio() => dataEstimada_Finalitzacio;
-        public Prioritat ObtenirPrioritat() => prioritat;
+        public int ObtenirPrioritat() => (int)prioritat;
 
-        // Métodos setters
-        public void CanviarResponsable(string nuevoResponsable)
-        {
-            responsable = nuevoResponsable;
-        }
-
-        public void CanviarDescripcio(string nuevaDescripcion)
-        {
-            descripcio = nuevaDescripcion;
-        }
-
-        public void CanviarEstat(int nuevoEstado)
-        {
-            estat = (Status)nuevoEstado;
-        }
-
-        public void CanviarDataEstimadaFinalizacio(string nuevaFecha)
-        {
-            dataEstimada_Finalitzacio = nuevaFecha;
-        }
-
-        public void CanviarPrioridad(Prioritat nuevaPrioridad)
-        {
-            prioritat = nuevaPrioridad;
-        }
+        // Setters
+        public void CanviarResponsable(string nuevoResponsable) => responsable = nuevoResponsable;
+        public void CanviarDescripcio(string nuevaDescripcion) => descripcio = nuevaDescripcion;
+        public void CanviarEstat(int nuevoEstado) => estat = (Status)nuevoEstado;
+        public void CanviarDataEstimadaFinalizacio(string nuevaFecha) => dataEstimada_Finalitzacio = nuevaFecha;
+        public void CanviarPrioridad(Prioritat nuevaPrioridad) => prioritat = nuevaPrioridad;
     }
 }

@@ -20,107 +20,110 @@
         <GridSplitter HorizontalAlignment="Center" Height="385" VerticalAlignment="Center" Width="1" Background="#7E000000" Grid.ColumnSpan="2"/>
         <GridSplitter HorizontalAlignment="Left" Height="385" VerticalAlignment="Top" Width="1" Background="#7F000000" Grid.Column="2" Grid.RowSpan="2"/>
 
+
+
+        <!-- LLISTA TO DO-->
         <StackPanel Grid.Column="0" Margin="5">
             <TextBlock Text="To Do" FontSize="18" FontWeight="Bold"
                        HorizontalAlignment="Center" Margin="0 0 0 10" FontFamily="Segoe UI Variable Small Semibold" TextDecorations="Underline"/>
 
-            <ItemsControl Name="TodoItems">
-                <ItemsControl.ItemTemplate>
+            <ListView Name="ListaToDo" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+
+                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Button Margin="5"
-                                Padding="10"
-                                HorizontalContentAlignment="Left"
-                                Background="LightYellow"
-                                BorderBrush="Goldenrod"
-                                Content="{Binding Description}"/>
+                        <Button Click="Button_Click"
+                            MinWidth="50"
+                            MinHeight="30"
+                            Margin="-1,-1,0,0"
+                            Background="{Binding ColorPrioritat}">
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold" Text="{Binding Title}"/>
+                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding Codigo}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Button>
                     </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-
-            <Grid>
-                <StackPanel Margin="0,0,157,10">
-                    <Button Height="85" Width="114" Background="#7C2BE3E3" Content="Comprovar el &#xD;&#xA;funcionament de &#xD;&#xA;l'aplicació" Click="Button_Click" MouseMove="Button_MouseMove"/>
-                </StackPanel>
-                <StackPanel Margin="147,0,10,10">
-                    <Button Height="76" Width="112" Background="#7CE32B2B" Content="Text De prova, &#xD;&#xA;per fer &#xD;&#xA;aquesta demo." Click="Button_Click"/>
-                    <Button Height="72" Width="116" Background="#7CCEE32B" Content="Text De prova, &#xA;per fer &#xA;aquesta demo. asdfasdfasdfasdf"/>
-                </StackPanel>
-
-            </Grid>
-            <Grid>
-                <StackPanel Margin="0,0,157,10">
-                    <Button Height="85" Width="114" Background="#7C6DE32B" Content="Comprovar el &#xA;funcionament de &#xA;l'aplicació"/>
-                </StackPanel>
-                <StackPanel Margin="147,0,10,10">
-                    <Button Height="78" Width="112" Background="#7CE32B2B" Content="Text De prova, &#xA;per fer &#xA;aquesta demo."/>
-                </StackPanel>
-
-            </Grid>
+                </ListView.ItemTemplate>
+            </ListView>
 
         </StackPanel>
 
 
 
 
+        <!-- LLISTA "EN PROGRES"-->
         <StackPanel Grid.Column="1" Margin="5">
             <TextBlock Text="En progrés" FontSize="18" FontWeight="Bold"
                        HorizontalAlignment="Center" Margin="0 0 0 10" FontFamily="Segoe UI Variable Small Semibold" TextDecorations="Underline"/>
 
-            <ItemsControl Name="InProgressItems">
-                <ItemsControl.ItemTemplate>
+            <ListView Name="InProgressItems" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+
+                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Button Margin="5"
-                                Padding="10"
-                                HorizontalContentAlignment="Left"
-                                Background="LightBlue"
-                                BorderBrush="SteelBlue"
-                                Content="{Binding Description}"/>
+                        <Button Click="Button_Click"
+                            MinWidth="50"
+                            MinHeight="30"
+                            Margin="-1,-1,0,0"
+                            Background="{Binding ColorPrioritat}">
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold" Text="{Binding Title}"/>
+                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding Codigo}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Button>
                     </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
-
-            <Grid>
-                <StackPanel Margin="0,0,157,10">
-                    <Button Height="85" Width="114" Background="#7C6DE32B" Content="Comprovar el &#xD;&#xA;funcionament de &#xD;&#xA;l'aplicació"></Button>
-                    <Button Height="72" Width="116" Background="#7CCEE32B" Content="Text De prova, &#xD;&#xA;per fer &#xD;&#xA;aquesta demo."/>
-                </StackPanel>
-                <StackPanel Margin="147,0,10,10">
-                    <Button Height="78" Width="112" Background="#7CE32B2B" Content="Text De prova, &#xD;&#xA;per fer &#xD;&#xA;aquesta demo."/>
-                </StackPanel>
-
-            </Grid>
-            <Grid>
-                <StackPanel Margin="0,0,157,10">
-                    <Button Height="85" Width="114" Background="#7C6DE32B" Content="Comprovar el &#xA;funcionament de &#xA;l'aplicació"/>
-                    <Button Height="72" Width="116" Background="#7CCEE32B" Content="Text De prova, &#xA;per fer &#xA;aquesta demo."/>
-                </StackPanel>
-                <StackPanel Margin="147,0,10,10">
-                    <Button Height="78" Width="112" Background="#7CE32B2B" Content="Text De prova, &#xA;per fer &#xA;aquesta demo."/>
-                </StackPanel>
-
-            </Grid>
+                </ListView.ItemTemplate>
+            </ListView>
 
 
         </StackPanel>
 
+
+
+        <!-- LLISTA "ACABAT"-->
         <StackPanel Grid.Column="2" Margin="5">
             <TextBlock Text="Acabat" FontSize="18" FontWeight="Bold"
                        HorizontalAlignment="Center" Margin="0 0 0 10" FontFamily="Segoe UI Variable Small Semibold" TextDecorations="Underline"/>
 
-            <ItemsControl Name="DoneItems">
-                <ItemsControl.ItemTemplate>
+            <ListView Name="DoneItems" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+
+                <ListView.ItemTemplate>
                     <DataTemplate>
-                        <Button Margin="5"
-                                Padding="10"
-                                HorizontalContentAlignment="Left"
-                                Background="LightGreen"
-                                BorderBrush="Green"
-                                Content="{Binding Description}"/>
+                        <Button Click="Button_Click"
+                            MinWidth="50"
+                            MinHeight="30"
+                            Margin="-1,-1,0,0"
+                            Background="{Binding ColorPrioritat}">
+                            <StackPanel>
+                                <TextBlock FontWeight="Bold" Text="{Binding Title}"/>
+                                <TextBlock Text="{Binding Description}" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding Codigo}" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Button>
                     </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackPanel>
 
+        
+        
+        <!--PART INFERIOR-->
         <Border Grid.Row="1" Grid.ColumnSpan="3"
                 Background="#54ECFFAF" Padding="10" CornerRadius="10,10,10,10" Margin="5">
             <StackPanel>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\45538934S\source\repos\WebApplicationAPIDemo\WebApplicationAPIDemo\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2022-01-14T12:08:47.2463933Z;True|2022-01-14T13:00:08.9408825+01:00;True|2022-01-14T12:35:16.9124327+01:00;True|2022-01-14T12:31:56.3973428+01:00;True|2022-01-14T12:18:07.8103806+01:00;True|2022-01-14T11:04:25.5588493+01:00;True|2022-01-14T10:44:26.3301556+01:00;True|2022-01-13T15:48:11.7565014+01:00;</History>
+  </PropertyGroup>
+</Project>

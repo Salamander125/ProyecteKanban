@@ -33,3 +33,4 @@ C:\Users\carus\source\repos\ProyecteKanban\ToDoListTest\ToDoListTest\obj\Debug\T
 C:\Users\carus\source\repos\ProyecteKanban\ToDoListTest\ToDoListTest\obj\Debug\ToDoListTest.csproj.CoreCompileInputs.cache
 C:\Users\carus\source\repos\ProyecteKanban\ToDoListTest\ToDoListTest\obj\Debug\ToDoListTest.exe
 C:\Users\carus\source\repos\ProyecteKanban\ToDoListTest\ToDoListTest\obj\Debug\ToDoListTest.pdb
+C:\Users\carus\source\repos\ProyecteKanban\ToDoListTest\ToDoListTest\obj\Debug\ToDoListTest.exe.config

@@ -19,6 +19,8 @@ namespace KANBAN_INTERFICIE
     /// </summary>
     public partial class DetallsTascaWindow : Window
     {
+        string descripcioPrevia;
+        string descripcioModificada;
 
         private Tiquet instanciaTiquet;
 
@@ -39,7 +41,10 @@ namespace KANBAN_INTERFICIE
 
 
             if (instanciaTiquet.Description != null)
+            {
                 DescriptionText.Text = instanciaTiquet.ObtenirDescripcio(); // DESCRIPCIÓ
+                descripcioPrevia = instanciaTiquet.ObtenirDescripcio();
+            }
             else
                 DescriptionText.Text = "<{Sense Descripció}>";
 
@@ -112,5 +117,24 @@ namespace KANBAN_INTERFICIE
             }
         }
 
+        private void GuardarCanvisModificats(object sender, RoutedEventArgs e)
+        {
+            descripcioModificada = DescriptionText.Text;
+
+            if (descripcioPrevia != descripcioModificada)
+            {
+                descripcioPrevia = descripcioModificada;
+                instanciaTiquet.CanviarDescripcio(descripcioModificada);
+                MessageBox.Show("S'han guardat els canvis");
+            }
+        }
+
+        private void EliminarTicket(object sender, RoutedEventArgs e)
+        {
+            if (instanciaTiquet.ObtenirEstat() == 0)
+            {
+                
+            }
+        }
     }
 }

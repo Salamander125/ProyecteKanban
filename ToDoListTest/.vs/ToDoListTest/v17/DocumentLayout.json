@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -29,6 +29,10 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
@@ -36,7 +40,7 @@
               "RelativeDocumentMoniker": "ToDoListTest\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\ToDoListTest\\ToDoListTest\\MainWindow.xaml.cs",
               "RelativeToolTip": "ToDoListTest\\MainWindow.xaml.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAnwD8AAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T17:39:58.01Z",
               "EditorCaption": ""

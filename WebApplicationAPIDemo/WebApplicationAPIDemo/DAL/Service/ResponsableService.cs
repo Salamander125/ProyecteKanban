@@ -13,7 +13,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Obté totes els responsables
         /// </summary>
-        /// <returns></returns>
         public List<Responsable> GetAll()
         {
             var result = new List<Responsable>();
@@ -31,8 +30,7 @@ namespace WebApplicationAPIDemo.DAL.Service
                             result.Add(new Responsable
                             {
                                 Codi = Convert.ToInt32(reader["Codi"].ToString()),
-                                Nom = reader["Nom"].ToString(),
-                                Cognom = reader["Cognom"].ToString(),
+                                Usuari = reader["Usuari"].ToString(),
                                 Contrasenya = reader["Contrasenya"].ToString(),
                                 Admin = Convert.ToBoolean(reader["Admin"]),
                             });
@@ -46,8 +44,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Obté un responsable segons l'ID
         /// </summary>
-        /// <param name="Id">Identificador d'usuari</param>
-        /// <returns>Dades de l'Usuari</returns>
         public Responsable GetById(int Codi)
         {
             Responsable responsable = null;
@@ -65,8 +61,7 @@ namespace WebApplicationAPIDemo.DAL.Service
                             responsable = new Responsable()
                             {
                                 Codi = Convert.ToInt32(reader["Codi"].ToString()),
-                                Nom = reader["Nom"].ToString(),
-                                Cognom = reader["Cognom"].ToString(),
+                                Usuari = reader["Usuari"].ToString(),
                                 Contrasenya = reader["Contrasenya"].ToString(),
                                 Admin = Convert.ToBoolean(reader["Admin"]),
                             };
@@ -78,19 +73,41 @@ namespace WebApplicationAPIDemo.DAL.Service
         }
 
         /// <summary>
+        /// Obté la contrasenya d'un responsable segons l'username que li passem
+        /// </summary>
+        public string GetPassword(string Usuari)
+        {
+            string Contrasenya = null;
+
+            using (var ctx = DbContext.GetInstance())
+            {
+                var query = "SELECT Contrasenya FROM Responsable WHERE Usuari = @Usuari";
+                using (var command = new SQLiteCommand(query, ctx))
+                {
+                    command.Parameters.Add(new SQLiteParameter("Usuari", Usuari));
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if(reader.Read())
+                        {                           
+                            Contrasenya = reader["Contrasenya"].ToString();                        
+                        }
+                    }
+                }
+            }
+            return Contrasenya;
+        }
+
+        /// <summary>
         /// Afegeix un nou responsable a la base de dades
         /// </summary>
-        /// <param name="tasca">Entitat usuari</param>
-        /// <returns>Id de l'usuari afegit</returns>
         public Responsable Add(Responsable responsable)
         {
             using (var ctx = DbContext.GetInstance())
             {
-                string query = "INSERT INTO Responsable (Nom, Cognom, Contrasenya, Admin) VALUES (@Nom, @Cognom, @Contrasenya, @Admin)";
+                string query = "INSERT INTO Responsable (Usuari, Contrasenya, Admin) VALUES (@Usuari, @Contrasenya, @Admin)";
                 using (var command = new System.Data.SQLite.SQLiteCommand(query, ctx))
                 {
-                    command.Parameters.Add(new SQLiteParameter("Nom", responsable.Nom));
-                    command.Parameters.Add(new SQLiteParameter("Cognom", responsable.Cognom));
+                    command.Parameters.Add(new SQLiteParameter("Usuari", responsable.Usuari));
                     command.Parameters.Add(new SQLiteParameter("Contrasenya", responsable.Contrasenya));
                     command.Parameters.Add(new SQLiteParameter("Admin", responsable.Admin));
 
@@ -108,8 +125,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Actualitza la contrasenya del responsable
         /// </summary>
-        /// <param name="tasca">Entitat usuari que es vol modificar</param>
-        /// <returns>Files afectades</returns>
         public int UpdateContrasenya(Responsable responsable)
         {
             int rows_affected = 0;
@@ -131,8 +146,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Elimina un responsable
         /// </summary>
-        /// <param name="Id">Codi d'usuari que es vol eliminar</param>
-        /// <returns>Files afectades</returns>
         public int Delete(int Codi)
         {
             int rows_affected = 0;

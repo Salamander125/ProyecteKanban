@@ -13,7 +13,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Obté totes les tasques
         /// </summary>
-        /// <returns></returns>
         public List<Tasca> GetAll()
         {
             var result = new List<Tasca>();
@@ -49,8 +48,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Obté les dades de la tasca
         /// </summary>
-        /// <param name="Id">Identificador d'usuari</param>
-        /// <returns>Dades de l'Usuari</returns>
         public Tasca GetById(int Codi)
         {
             Tasca tasca = null;
@@ -86,8 +83,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Afegeix un nou usuari a la base de dades
         /// </summary>
-        /// <param name="tasca">Entitat usuari</param>
-        /// <returns>Id de l'usuari afegit</returns>
         public Tasca Add(Tasca tasca)
         {
             using (var ctx = DbContext.GetInstance())
@@ -116,8 +111,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Actualitza la descripcio d'una tasca
         /// </summary>
-        /// <param name="tasca">Entitat usuari que es vol modificar</param>
-        /// <returns>Files afectades</returns>
         public int UpdateDescripcio(Tasca tasca)
         {
             int rows_affected = 0;
@@ -139,8 +132,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Actualitza el responsable d'una tasca
         /// </summary>
-        /// <param name="tasca">Entitat usuari que es vol modificar</param>
-        /// <returns>Files afectades</returns>
         public int UpdateResponsable(Tasca tasca)
         {
             int rows_affected = 0;
@@ -162,8 +153,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Actualitza la priotitat d'una tasca
         /// </summary>
-        /// <param name="tasca">Entitat usuari que es vol modificar</param>
-        /// <returns>Files afectades</returns>
         public int UpdatePrioritat(Tasca tasca)
         {
             int rows_affected = 0;
@@ -185,8 +174,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Actualitza l'estat d'una tasca
         /// </summary>
-        /// <param name="tasca">Entitat usuari que es vol modificar</param>
-        /// <returns>Files afectades</returns>
         public int UpdateEstat(Tasca tasca)
         {
             int rows_affected = 0;
@@ -208,8 +195,6 @@ namespace WebApplicationAPIDemo.DAL.Service
         /// <summary>
         /// Elimina una tasca
         /// </summary>
-        /// <param name="Id">Codi d'usuari que es vol eliminar</param>
-        /// <returns>Files afectades</returns>
         public int Delete(int Codi)
         {
             int rows_affected = 0;

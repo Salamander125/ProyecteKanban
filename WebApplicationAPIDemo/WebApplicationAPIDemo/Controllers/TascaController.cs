@@ -15,7 +15,7 @@ namespace WebApplicationAPIDemo.Controllers
     [ApiController]
     public class TascaController : ControllerBase
     {
-        // GET: users
+        // GET: Tasca
         [HttpGet]
         public List<Tasca> Get()
         {
@@ -23,7 +23,7 @@ namespace WebApplicationAPIDemo.Controllers
             return objTascaService.GetAll();
         }
 
-        // GET users/5
+        // GET Tasca/5
         [HttpGet("{Codi}")]
         public Tasca Get(int Codi)
         {
@@ -31,7 +31,7 @@ namespace WebApplicationAPIDemo.Controllers
             return objTascaService.GetById(Codi);
         }
 
-        // POST users
+        // POST Tasca
         [HttpPost]
         public Tasca Post([FromBody] Tasca user)
         {
@@ -39,7 +39,7 @@ namespace WebApplicationAPIDemo.Controllers
             return objTascaService.Add(user);
         }
 
-        // PUT users/5
+        // PUT Tasca/5
         [HttpPut("{Codi}/Responsable")]
         public int PutResponsable(int Codi, [FromBody] Tasca user)
         {
@@ -47,7 +47,7 @@ namespace WebApplicationAPIDemo.Controllers
             return objTascaService.UpdateResponsable(user);
         }
 
-        // PUT users/5
+        // PUT Tasca/1
         [HttpPut("{Codi}/Prioritat")]
         public int PutPrioritat(int Codi, [FromBody] Tasca user)
         {
@@ -55,7 +55,7 @@ namespace WebApplicationAPIDemo.Controllers
             return objTascaService.UpdatePrioritat(user);
         }
 
-        // PUT users/5
+        // PUT Tasca/2
         [HttpPut("{Codi}/Estat")]
         public int PutEstat(int Codi, [FromBody] Tasca user)
         {
@@ -63,7 +63,7 @@ namespace WebApplicationAPIDemo.Controllers
             return objTascaService.UpdateEstat(user);
         }
 
-        // DELETE users/5
+        // DELETE Tasca/5
         [HttpDelete("{Codi}")]
         public void Delete(int Codi)
         {

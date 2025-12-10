@@ -9,8 +9,7 @@ namespace WebApplicationAPIDemo.Model
     public class Responsable
     {
         public long Codi { get; set; }
-        public string Nom { get; set; }
-        public string Cognom { get; set; }
+        public string Usuari { get; set; }
         public string Contrasenya { get; set; }
         public bool Admin {  get; set; }
 

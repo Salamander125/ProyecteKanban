@@ -15,7 +15,7 @@ namespace WebApplicationAPIDemo.Controllers
     [ApiController]
     public class ResponsableController : ControllerBase
     {
-        // GET: users
+        // GET: Responsable
         [HttpGet]
         public List<Responsable> Get()
         {
@@ -23,7 +23,7 @@ namespace WebApplicationAPIDemo.Controllers
             return objResponsableService.GetAll();
         }
 
-        // GET users/5
+        // GET Responsable/5
         [HttpGet("{Codi}")]
         public Responsable Get(int Codi)
         {
@@ -31,7 +31,15 @@ namespace WebApplicationAPIDemo.Controllers
             return objResponsableService.GetById(Codi);
         }
 
-        // POST users
+        // GET Responsable/Proyecto
+        [HttpGet("Usuari/{Usuari}")]
+        public string Get(string Usuari)
+        {
+            ResponsableService objResponsableService = new ResponsableService();
+            return objResponsableService.GetPassword(Usuari);
+        }
+
+        // POST Responsable
         [HttpPost]
         public Responsable Post([FromBody] Responsable user)
         {
@@ -39,15 +47,15 @@ namespace WebApplicationAPIDemo.Controllers
             return objResponsableService.Add(user);
         }
 
-        // PUT users/5
-        [HttpPut("{Codi}")]
+        // PUT Responsable/paloma
+        [HttpPut("{Codi}/Contrasenya")]
         public int PutContrasenya(int Codi, [FromBody] Responsable user)
         {
             ResponsableService objResponsableService = new ResponsableService();
             return objResponsableService.UpdateContrasenya(user);
         }
 
-        // DELETE users/5
+        // DELETE Responsable/5
         [HttpDelete("{Codi}")]
         public void Delete(int Codi)
         {

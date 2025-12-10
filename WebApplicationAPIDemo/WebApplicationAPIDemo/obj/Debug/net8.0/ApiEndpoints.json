@@ -73,8 +73,30 @@
   },
   {
     "ContainingType": "WebApplicationAPIDemo.Controllers.ResponsableController",
-    "Method": "PutContrasenya",
+    "Method": "Delete",
     "RelativePath": "api/Responsable/{Codi}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Codi",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplicationAPIDemo.Controllers.ResponsableController",
+    "Method": "PutContrasenya",
+    "RelativePath": "api/Responsable/{Codi}/Contrasenya",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -104,22 +126,26 @@
   },
   {
     "ContainingType": "WebApplicationAPIDemo.Controllers.ResponsableController",
-    "Method": "Delete",
-    "RelativePath": "api/Responsable/{Codi}",
-    "HttpMethod": "DELETE",
+    "Method": "Get",
+    "RelativePath": "api/Responsable/Usuari/{Usuari}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Codi",
-        "Type": "System.Int32",
+        "Name": "Usuari",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Void",
-        "MediaTypes": [],
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
         "StatusCode": 200
       }
     ]

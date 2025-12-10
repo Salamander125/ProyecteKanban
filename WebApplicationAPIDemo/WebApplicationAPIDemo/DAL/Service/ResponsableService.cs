@@ -98,7 +98,7 @@ namespace WebApplicationAPIDemo.DAL.Service
 
                     command.CommandText = "SELECT last_insert_rowid()";
 
-                    responsable.Codi = (Int32)command.ExecuteScalar();
+                    responsable.Codi = (Int64)command.ExecuteScalar();
                 }
             }
 

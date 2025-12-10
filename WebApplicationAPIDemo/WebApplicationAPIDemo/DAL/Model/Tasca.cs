@@ -15,7 +15,7 @@ namespace WebApplicationAPIDemo.Model
         public DateTime Data_finalitzacio { get; set; }
         public int Prioritat {  get; set; }
         public int Estat {  get; set; }
-        public int Codi_responsable { get; set; }
+        public long Codi_responsable { get; set; }
 
     }
 }

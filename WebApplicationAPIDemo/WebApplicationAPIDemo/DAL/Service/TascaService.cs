@@ -30,14 +30,14 @@ namespace WebApplicationAPIDemo.DAL.Service
                         {
                             result.Add(new Tasca
                             {
-                                Codi = Convert.ToInt32(reader["Codi"].ToString()),
+                                Codi = Convert.ToInt64(reader["Codi"].ToString()),
                                 Titol = reader["Titol"].ToString(),
                                 Descripcio = reader["Descripcio"].ToString(),
                                 Data_creacio = Convert.ToDateTime(reader["Data_Creacio"]),
                                 Data_finalitzacio = Convert.ToDateTime(reader["Data_Finalitzacio"]),
                                 Prioritat = Convert.ToInt32(reader["Prioritat"].ToString()),
                                 Estat = Convert.ToInt32(reader["Estat"].ToString()),
-                                Codi_responsable = Convert.ToInt32(reader["Codi_responsable"].ToString()),
+                                Codi_responsable = Convert.ToInt64(reader["Codi_responsable"].ToString()),
                             });
                         }
                     }
@@ -67,14 +67,14 @@ namespace WebApplicationAPIDemo.DAL.Service
                         {
                             tasca = new Tasca()
                             {
-                                Codi = Convert.ToInt32(reader["Codi"].ToString()),
+                                Codi = Convert.ToInt64(reader["Codi"].ToString()),
                                 Titol = reader["Titol"].ToString(),
                                 Descripcio = reader["Descripcio"].ToString(),
                                 Data_creacio = Convert.ToDateTime(reader["Data_creacio"]),
                                 Data_finalitzacio = Convert.ToDateTime(reader["Data_finalitzacio"]),
                                 Prioritat = Convert.ToInt32(reader["Prioritat"].ToString()),
                                 Estat = Convert.ToInt32(reader["Estat"].ToString()),
-                                Codi_responsable = Convert.ToInt32(reader["Codi_responsable"].ToString()),
+                                Codi_responsable = Convert.ToInt64(reader["Codi_responsable"].ToString()),
                             };
                         }
                     }
@@ -106,7 +106,7 @@ namespace WebApplicationAPIDemo.DAL.Service
 
                     command.CommandText = "SELECT last_insert_rowid()";
 
-                    tasca.Codi = (Int32)command.ExecuteScalar();
+                    tasca.Codi = (Int64)command.ExecuteScalar();
                 }
             }
 

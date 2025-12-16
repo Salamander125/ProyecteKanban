@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:KANBAN_INTERFICIE"
              StartupUri="PissarraKanban_MainWindow.xaml" 
              ThemeMode="Light"
+             
              >
     <Application.Resources>
          

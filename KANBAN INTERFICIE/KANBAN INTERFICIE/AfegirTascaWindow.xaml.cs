@@ -14,6 +14,7 @@ namespace KANBAN_INTERFICIE
         {
             InitializeComponent();
             ConnectorDeFinestraPrincipal = instanciaMainWindow;
+            DescriptionBox.Focus(); //inmediatament permet escriure sense fer clic.
         }
 
 
@@ -23,9 +24,9 @@ namespace KANBAN_INTERFICIE
 
             // Estructura que valida que no hi hagin camps Buits
 
-            if (string.IsNullOrWhiteSpace(DescriptionBox.Text))
+            if (string.IsNullOrWhiteSpace(DescriptionBox.Text) || string.IsNullOrWhiteSpace(TitolBox.Text))
             {
-                MessageBox.Show("HAS DE POSAR LA DESCRIPCIÓ ABANS DE CREAR EL TIQUET", "Omplir la descripció és obligatori", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("HAS DE POSAR LA DESCRIPCIÓ I EL TITOL ABANS DE CREAR EL TIQUET", "Omplir la descripció/titol és obligatori", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
             /// Comprova que no hi hagi PRIORITAT/STATUS Null. omple automaticament lo que estigui buit.
             else if (StatusBox.SelectedIndex == -1 || PriorityBox.SelectedIndex == -1) //Si no hi ha res seleccionat...
@@ -39,21 +40,35 @@ namespace KANBAN_INTERFICIE
                         if (StatusBox.SelectedIndex == -1)
                         { StatusBox.SelectedIndex = 0; }
                         if (PriorityBox.SelectedIndex == -1)
-                        { PriorityBox.SelectedIndex = 0; }
+                        { PriorityBox.SelectedIndex = 1; }
+                        //DESPRES GUARDA I TANCA LA FINESTRA AUTOMATICAMENT:
+                        {
+                            Tiquet tiquet_que_sEnvia = new Tiquet(
+                                codi: nouCodi,
+                                responsable: (ResponsibleBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
+                                titol: TitolBox.Text,
+                                descripcio: DescriptionBox.Text,
+                                estat: (Status)StatusBox.SelectedIndex,
+                                dataCreacio: DateTime.Now.ToString("dd/MM/yyyy"),
+                                dataEstimada_Finalitzacio: DataFinalitzacioPicker.SelectedDate?.ToString("dd/MM/yyyy"),
+                                prioritat: (Prioritat)PriorityBox.SelectedIndex);
 
+                            ConnectorDeFinestraPrincipal.AfegirTiquet(tiquet_que_sEnvia);
+                            this.Close();
+                        }
                         break;
                     case MessageBoxResult.No:
                         MessageBox.Show("Pues omple-ho tot, troç de suroooo", "No vols?", MessageBoxButton.OK, MessageBoxImage.Information);
                         break;
                 }
             }
-
             else
             {
 
                 Tiquet tiquet_que_sEnvia = new Tiquet(
                     codi: nouCodi,
                     responsable: (ResponsibleBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
+                    titol: TitolBox.Text,
                     descripcio: DescriptionBox.Text,
                     estat: (Status)StatusBox.SelectedIndex,
                     dataCreacio: DateTime.Now.ToString("dd/MM/yyyy"),

@@ -1,29 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace KANBAN_INTERFICIE
 {
-    class Responsable
+    public class Responsable : INotifyPropertyChanged
     {
         private int codi;
         private string nom;
         private string cognoms;
+        private bool esAdmin;
 
-        public Responsable(int codi, string nom, string cognoms)
+        public int Codi
         {
-            this.codi = codi;
-            this.nom = nom;
-            this.cognoms = cognoms;
+            get => codi;
+            set { codi = value; OnPropertyChanged(nameof(Codi)); }
         }
 
-        public int ObtenirCodi() => codi;
-        public string ObtenirNom() => nom;
-        public string ObtenirCognoms() => cognoms;
+        public string Nom
+        {
+            get => nom;
+            set { nom = value; OnPropertyChanged(nameof(Nom)); }
+        }
 
-        public void CanviarNom(string nouNom) => nom = nouNom;
-        public void CanviarCognoms(string NouCognom) => cognoms = NouCognom;
+        public string Cognoms
+        {
+            get => cognoms;
+            set { cognoms = value; OnPropertyChanged(nameof(Cognoms)); }
+        }
+
+        public bool AdminPrivilegi
+        {
+            get => esAdmin;
+            set { esAdmin = value; OnPropertyChanged(nameof(AdminPrivilegi)); }
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string prop)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(prop));
+        }
+
+
     }
 }

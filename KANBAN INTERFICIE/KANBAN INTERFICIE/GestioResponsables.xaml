@@ -1,0 +1,67 @@
+﻿<Window x:Class="KANBAN_INTERFICIE.GestioResponsables"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KANBAN_INTERFICIE"
+        mc:Ignorable="d"
+        Title="GestioResponsables" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"        
+        >
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="10">
+            <ListView ItemsSource="{Binding Responsables}"
+              SelectedItem="{Binding ResponsableSeleccionat}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" Width="70" DisplayMemberBinding="{Binding Codi}"/>
+                        <GridViewColumn Header="Nom" Width="110" DisplayMemberBinding="{Binding Nom}"/>
+                        <GridViewColumn Header="Cognom" Width="160" DisplayMemberBinding="{Binding Cognoms}"/>
+                        <GridViewColumn Header="Es Admin?" Width="160" DisplayMemberBinding="{Binding AdminPrivilegi}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+        <GridSplitter HorizontalAlignment="Right" Height="500" Margin="0,0,10,0" VerticalAlignment="Center" Width="1" Background="#7FBDBDBD" Grid.ColumnSpan="1"/>
+
+        <Grid Grid.Column="1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                
+                <StackPanel Grid.Row="0">
+                <TextBlock Text="Gestió de Responsables™" TextWrapping="Wrap" FontSize="24" FontFamily="MADE TOMMY" Margin="0,0,0,10" VerticalAlignment="Center">
+                    <TextBlock.Foreground>
+                        <RadialGradientBrush>
+                            <GradientStop Color="#FFFF7417" Offset="0"/>
+                            <GradientStop Color="Red" Offset="1"/>
+                        </RadialGradientBrush>
+                    </TextBlock.Foreground></TextBlock>
+
+                <TextBlock TextWrapping="NoWrap" Text="Nom:" Margin="0,10,0,2"/>
+                <TextBox TextWrapping="NoWrap" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding NouNom, UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock TextWrapping="NoWrap" Text="Cognom:" Margin="0,10,0,2"/>
+                <TextBox TextWrapping="NoWrap" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center" Text="{Binding NouCognom, UpdateSourceTrigger=PropertyChanged}"/>
+                <CheckBox Name="IsAdminCheckbox" Content="L'usuari és Administrador" IsChecked="{Binding NouValorPrivilegi, UpdateSourceTrigger=PropertyChanged}" />
+                    <Button Name="AfegirResponsable" Content="Afegir Nou" Height="45" Width="200" Margin="0,10,0,0"  Command="{Binding AfegirCommand}"/>
+                
+
+            </StackPanel>
+                <StackPanel Grid.Row="1">
+                <Button Name="ModificarResponsable" Content="Modificar el Seleccionat" Height="31" Width="200" Margin="0,10,0,0" Command="{Binding ModificarCommand}"></Button>
+                <Button Name="EliminarResponsable" Content="Eliminar el Seleccionat" Height="31" Width="200" Margin="0,10,0,0" Command="{Binding EliminarCommand}"></Button>
+            </StackPanel>
+            </Grid>
+        <CheckBox Grid.Column="1" Content="CheckBox" HorizontalAlignment="Left" Margin="392,187,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

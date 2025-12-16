@@ -8,5 +8,8 @@
     <Compile Update="DetallsTascaWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GestioResponsables.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

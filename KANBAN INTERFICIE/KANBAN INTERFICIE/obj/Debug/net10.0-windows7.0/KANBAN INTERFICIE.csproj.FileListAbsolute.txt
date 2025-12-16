@@ -1,0 +1,27 @@
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\bin\Debug\net10.0-windows7.0\KANBAN INTERFICIE.exe
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\bin\Debug\net10.0-windows7.0\KANBAN INTERFICIE.deps.json
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\bin\Debug\net10.0-windows7.0\KANBAN INTERFICIE.runtimeconfig.json
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\bin\Debug\net10.0-windows7.0\KANBAN INTERFICIE.dll
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\bin\Debug\net10.0-windows7.0\KANBAN INTERFICIE.pdb
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\PissarraKanban_MainWindow.baml
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\AfegirTascaWindow.g.cs
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\DetallsTascaWindow.g.cs
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\GestioResponsables.g.cs
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\PissarraKanban_MainWindow.g.cs
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\App.g.cs
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE_MarkupCompile.cache
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE_MarkupCompile.lref
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\App.baml
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\AfegirTascaWindow.baml
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\DetallsTascaWindow.baml
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\GestioResponsables.baml
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE.g.resources
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE.AssemblyInfoInputs.cache
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE.AssemblyInfo.cs
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE.csproj.CoreCompileInputs.cache
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE.dll
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\refint\KANBAN INTERFICIE.dll
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE.pdb
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\KANBAN INTERFICIE.genruntimeconfig.cache
+C:\Users\userino\Documents\INSTI_CAMPALANS_2025\Projecte\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\KANBAN INTERFICIE\obj\Debug\net10.0-windows7.0\ref\KANBAN INTERFICIE.dll

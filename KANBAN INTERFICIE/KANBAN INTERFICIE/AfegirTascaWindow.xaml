@@ -5,22 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KANBAN_INTERFICIE"
         mc:Ignorable="d"
-        Title="Afegir/Modificar Tasca" Height="477" Width="500"
+        Title="Afegir/Modificar Tasca" Height="530" Width="500"
         WindowStartupLocation="CenterScreen" 
         ResizeMode="NoResize" 
         >
     <Grid Margin="20">
         <StackPanel>
+            <TextBlock Text="Títol"/>
+            <!-- TITOL -->
+            <TextBox Name="TitolBox"  TextWrapping="Wrap" FontFamily="MV Boli" FontWeight="Bold"/>
+
             <TextBlock Text="Descripció"/> <!-- DESCRIPCIO -->
             <TextBox Name="DescriptionBox" Height="60" TextWrapping="Wrap"/>
 
             <!-- PRIORITAT ComboBox -->
             <TextBlock Text="Prioritat" Margin="0 10 0 0"/>
             <ComboBox Name="PriorityBox">
-                <ComboBoxItem Content="Sense prioritat"/>
-                <ComboBoxItem Content="Baixa"/>
-                <ComboBoxItem Content="Mitjana"/>
-                <ComboBoxItem Content="Alta"/>
+                <ComboBoxItem Content="Sense prioritat" Tag="{x:Static local:Prioritat.SensePrioritat}"/>
+                <ComboBoxItem Content="Baixa" Tag="{x:Static local:Prioritat.Baixa}"/>
+                <ComboBoxItem Content="Mitjana" Tag="{x:Static local:Prioritat.Mitja}"/>
+                <ComboBoxItem Content="Alta" Tag="{x:Static local:Prioritat.Alta}"/>
             </ComboBox>
 
             <!-- RESPONSABLE ComboBox -->
@@ -37,16 +41,16 @@
             <!-- STATUS ComboBox -->
             <TextBlock Text="Status" Margin="0 10 0 0"/>
             <ComboBox Name="StatusBox">
-                <ComboBoxItem Content="To Do"/>
-                <ComboBoxItem Content="In Progress"/>
-                <ComboBoxItem Content="Done"/>
+                <ComboBoxItem Content="To Do" Tag="{x:Static local:Status.toDo}"/>
+                <ComboBoxItem Content="In Progress" Tag="{x:Static local:Status.enProgres}"/>
+                <ComboBoxItem Content="Done" Tag="{x:Static local:Status.acabat}"/>
             </ComboBox>
 
 
             <!-- BOTONS Guardar/Cancelar -->
             <WrapPanel Margin="0,20,0,0">
-                <Button Name="SaveButton" Content="💾 Guardar Dades" Height="52" Width="248" Click="SaveButton_Click" />
-                <Button x:Name="CancelButton" Content="❌ Cancelar Operacio" Height="52" Width="188" Click="CancelarOperacio"/>
+                <Button Name="SaveButton" Content="💾 Guardar Dades" Height="52" Width="248" Click="SaveButton_Click" IsDefault="True"/>
+                <Button x:Name="CancelButton" Content="❌ Cancelar Operacio" Height="52" Width="188" Click="CancelarOperacio" IsCancel="True"/>
             </WrapPanel>
 
         </StackPanel>

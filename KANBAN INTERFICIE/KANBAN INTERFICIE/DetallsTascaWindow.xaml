@@ -5,28 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KANBAN_INTERFICIE"
         mc:Ignorable="d"
-        Title="DetallsTascaWindow" Height="552" Width="800">
+        Title="DetallsTascaWindow" Height="665" Width="600"
+        WindowStartupLocation="CenterScreen"
+        >
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
+        <!-- 
+        - AFEGIR CAMP DE TITOL
+        - AFEGIR DROPDOWN DE STATUS
+        - CANVIAR PRIORITAT_label PER dropdown
+        - FER QUE ES PUGUI GUARDAR DIRECTAMENT
+        -->
+
 
         <StackPanel Margin="0,0,0,10">
 
             <!-- ID -->
             <TextBlock Text="ID Tasca:" FontWeight="Bold" Margin="0 0 0 0"/>
-            <Border BorderBrush="#CCC" Background="White" BorderThickness="1" Padding="2" CornerRadius="5" Height="25" Width="96" HorizontalAlignment="Left">
-                <TextBlock Name="idText" Text="0000" TextWrapping="NoWrap" Height="14" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Border BorderBrush="#CCC"  BorderThickness="1" Padding="2,0,2,0" CornerRadius="5" Height="25" Width="96" HorizontalAlignment="Left">
+                <TextBlock Name="idText" Text="0000" TextWrapping="NoWrap" Height="14" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Border>
+
+            <!-- Titol -->
+            <TextBlock Text="Títol:" FontWeight="Bold" Margin="0 0 0 0"/>
+            <Border BorderBrush="#CCC" BorderThickness="1" Padding="8,0,8,0" CornerRadius="5" Height="30">
+                <TextBlock Name="TitolText" Text="([TITOL])" TextWrapping="NoWrap" Height="18" VerticalAlignment="Center"/>
             </Border>
 
             <!-- DESCRIPCIÓ -->
             <TextBlock Text="Descripció:" FontWeight="Bold" Margin="0 10 0 0"/>
-            <Border BorderBrush="#CCC" Background="White" BorderThickness="1" Padding="8" CornerRadius="5" Height="88">
-                <TextBox Name="DescriptionText" TextWrapping="Wrap" Height="69" VerticalAlignment="Center"/>
-            </Border>
+            <TextBox Name="DescriptionText" TextWrapping="Wrap" Height="88" VerticalAlignment="Center" TextChanged="DescriptionText_TextChanged"/>
 
+            <!-- ESTAT -->
+            <TextBlock Text="Estat:" FontWeight="Bold" Margin="0 10 0 0"/>
+            <ComboBox Name="StatusBox">
+                <ComboBoxItem Content="To Do" Tag="{x:Static local:Status.toDo}"/>
+                <ComboBoxItem Content="In Progress" Tag="{x:Static local:Status.enProgres}"/>
+                <ComboBoxItem Content="Done" Tag="{x:Static local:Status.acabat}"/>
+            </ComboBox>
+
+            <!-- PRIORITAT -->
+            <TextBlock Text="Prioritat:" FontWeight="Bold" Margin="0 10 0 0"/>
+            <ComboBox Name="PriorityBox">
+                <ComboBoxItem Content="Sense prioritat" Tag="{x:Static local:Prioritat.SensePrioritat}"/>
+                <ComboBoxItem Content="Baixa" Tag="{x:Static local:Prioritat.Baixa}"/>
+                <ComboBoxItem Content="Mitjana" Tag="{x:Static local:Prioritat.Mitja}"/>
+                <ComboBoxItem Content="Alta" Tag="{x:Static local:Prioritat.Alta}"/>
+            </ComboBox>
+
+            <!-- RESPONSABLE -->
+            <TextBlock Text="Responsable:" FontWeight="Bold" Margin="0 10 0 0"/>
+            <Border BorderBrush="#CCC" Background="White" BorderThickness="1" Padding="8" CornerRadius="5">
+                <TextBlock Name="ResponsibleText" TextWrapping="NoWrap"/>
+            </Border>
             <!-- DATA DE CREACIO -->
             <TextBlock Text="Data de creació:" FontWeight="Bold" Margin="0 10 0 0"/>
             <DatePicker Name="creationDate"  Background="White" SelectedDateFormat="Long" IsHitTestVisible="False" Focusable="False"
@@ -37,17 +72,12 @@
             <DatePicker Name="expectedDate" Background="White" SelectedDateFormat="Long" IsHitTestVisible="False" Focusable="False"
             SelectedDate="{x:Null}"  />
 
-            <!-- RESPONSABLE -->
-            <TextBlock Text="Responsable:" FontWeight="Bold" Margin="0 10 0 0"/>
-            <Border BorderBrush="#CCC" Background="White" BorderThickness="1" Padding="8" CornerRadius="5">
-                <TextBlock Name="ResponsibleText" TextWrapping="NoWrap"/>
-            </Border>
 
-            <!-- PRIORITAT AMB LED -->
+
+            <!-- PRIORITAT AMB LED 
             <TextBlock Text="Prioritat:" FontWeight="Bold" Margin="10 10 0 5"/>
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="8 0 0 0">
-                <!-- LED circular -->
                 <Ellipse Name="PriorityLED"
                          Width="20" Height="20"
                          Stroke="Black"
@@ -55,16 +85,15 @@
                          Margin="0 0 10 0"/>
                 <TextBlock Name="PriorityLabel" VerticalAlignment="Center"/>
             </StackPanel>
-
+            -->
         </StackPanel>
 
         <!-- BOTONS -->
         <StackPanel Grid.Row="1" Orientation="Horizontal"
                     HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Name="EditButton" Content="Guardar" Width="100" Click="GuardarCanvisModificats"/>
-            <Button Name="DeleteButton" Content="💣Eliminar" Width="100" Click="EliminarTicket"/>
+            <Button Name="EditButton" Content="Guardar" Width="200" Height="50" Click="GuardarCanvisModificats"/>
+            <Button Name="DeleteButton" Content="💣Eliminar" Width="200" Height="50" Click="DeleteButton_Click"/>
         </StackPanel>
         <DatePicker HorizontalAlignment="Left" Margin="772,162,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button Content="DEBUG: &#xD;&#xA;ACTIVAR &#xD;&#xA;PLACEHOLDERS" HorizontalAlignment="Left" Margin="500,340,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.477,-0.931" Height="85" Width="148" Click="PlaceHolders_DeProva"/>
     </Grid>
 </Window>

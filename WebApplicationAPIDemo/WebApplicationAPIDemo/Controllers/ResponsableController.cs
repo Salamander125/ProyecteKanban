@@ -31,7 +31,7 @@ namespace WebApplicationAPIDemo.Controllers
             return objResponsableService.GetById(Codi);
         }
 
-        // GET Responsable/Proyecto
+        // GET Responsable/Usuari/Proyecto
         [HttpGet("Usuari/{Usuari}")]
         public string Get(string Usuari)
         {

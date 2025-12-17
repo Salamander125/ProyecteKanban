@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WpfAppTestAPIClient.Model
+{
+    public class Tasca
+    {
+        public long Codi { get; set; }
+        public string Titol { get; set; }
+        public string Descripcio { get; set; }
+        public DateTime Data_creacio { get; set; }
+        public DateTime Data_finalitzacio { get; set; }
+        public int Prioritat { get; set; }
+        public int Estat { get; set; }
+        public long Codi_responsable { get; set; }
+
+    }
+}

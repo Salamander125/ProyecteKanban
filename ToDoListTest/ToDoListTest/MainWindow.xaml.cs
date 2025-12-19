@@ -1,69 +1,100 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using ToDoListTest.Model;
 
 namespace ToDoListTest
 {
-    public class Ticket
-    {
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Codigo { get; set; }
-    }
-
     public partial class MainWindow : Window
     {
-        public ObservableCollection<Ticket> TicketsPendientes { get; set; }
-        public ObservableCollection<Ticket> TicketsEnCurso { get; set; }
-        public ObservableCollection<Ticket> TicketsFinalizados { get; set; }
+        public Task<List<Model.Tasca>> AllTickets { get; set; }
+        public ObservableCollection<Tasca> TicketsPendientes { get; set; }
+        public ObservableCollection<Tasca> TicketsEnCurso { get; set; }
+        public ObservableCollection<Tasca> TicketsFinalizados { get; set; }
+        public ObservableCollection<Responsable> ListaResp { get; set; }
 
-        private Ticket ticketArrastrado = null;
+        private Tasca ticketArrastrado = null;
         private Point puntoInicialArrastre;
         private const string FormatoDatosTicket = "TicketDataFormat";
 
         public MainWindow()
         {
             InitializeComponent();
-
-            TicketsPendientes = new ObservableCollection<Ticket>();
-            TicketsEnCurso = new ObservableCollection<Ticket>();
-            TicketsFinalizados = new ObservableCollection<Ticket>();
+            VerificarPermisos();
+            TicketsPendientes = new ObservableCollection<Tasca>();
+            TicketsEnCurso = new ObservableCollection<Tasca>();
+            TicketsFinalizados = new ObservableCollection<Tasca>();
+            ListaResp = new ObservableCollection<Responsable>();
 
             ListaTickets.ItemsSource = TicketsPendientes;
             ListaEnCurso.ItemsSource = TicketsEnCurso;
             ListaFinalizados.ItemsSource = TicketsFinalizados;
+            ListaCompañeros.ItemsSource = ListaResp;
+
+            CargarYClasificarTickets();
+            Closed += (s, e) => Environment.Exit(0);
         }
 
-        public void AddTask()
+        private void VerificarPermisos()
         {
-            if (IntroTitle != null && IntroTitle.Text != "")
+            // Si el usuario NO es administrador, ocultamos o deshabilitamos el botón
+            if (SessionManager.UsuarioActual != null && !SessionManager.UsuarioActual.admin)
             {
-                TicketsPendientes.Add(new Ticket
+                // Suponiendo que tu botón se llama btnAddResponsable en el XAML
+                // btnAddResponsable.Visibility = Visibility.Collapsed; 
+
+                // O si prefieres dejarlo visible pero que no haga nada:
+                RespBtn.IsEnabled = false;
+                EliminarUsuariobtn.IsEnabled = false;
+            }
+        }
+
+        private async void CargarYClasificarTickets()
+        {
+            var allTickets = await API_REST.Instance.GetAllTascaAsync();
+            var allusers = await API_REST.Instance.GetAllResponsableAsync();
+            TicketsPendientes.Clear();
+            TicketsEnCurso.Clear();
+            TicketsFinalizados.Clear();
+            ListaResp.Clear();
+
+            foreach (Tasca t in allTickets)
+            {
+                switch (t.Estat)
                 {
-                    Title = IntroTitle.Text,
-                    Description = IntroDescription.Text,
-                });
+                    case 0: TicketsPendientes.Add(t); break;
+                    case 1: TicketsEnCurso.Add(t); break;
+                    case 2: TicketsFinalizados.Add(t); break;
+                }
             }
-            else
-            {
-                MessageBox.Show("Error: El campo de titulo no puede estar vacio");
-            }
-            // Limpiar los campos de entrada después de agregar
-            IntroTitle.Text = "Nuevo";
-            IntroDescription.Text = "";
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            AddTask();
+            foreach (Responsable r in allusers)
+            {
+                ListaResp.Add(r);
+            }
         }
 
         private void AccesoNuevaVentana(object sender, MouseButtonEventArgs e)
         {
-            new Eliminar().ShowDialog();
+            FrameworkElement elemento = sender as FrameworkElement;
+
+            if (elemento?.DataContext is Tasca tascaSeleccionada)
+            {
+                Eliminar ventanaEdicion = new Eliminar(tascaSeleccionada);
+                ventanaEdicion.Owner = this;
+
+                bool? resultado = ventanaEdicion.ShowDialog();
+
+                if (resultado == true)
+                {
+                    CargarYClasificarTickets();
+                }
+            }
         }
 
         // Funcion para encontrar el padre del Ticket arrastrado
@@ -101,7 +132,7 @@ namespace ToDoListTest
 
                     if (itemContenedor != null)
                     {
-                        ticketArrastrado = (Ticket)lista.ItemContainerGenerator.ItemFromContainer(itemContenedor);
+                        ticketArrastrado = (Tasca)lista.ItemContainerGenerator.ItemFromContainer(itemContenedor);
 
                         if (ticketArrastrado != null)
                         {
@@ -129,7 +160,7 @@ namespace ToDoListTest
         }
 
         // 4. Busca la colección de origen del ticket que se está arrastrando
-        private ObservableCollection<Ticket> BuscarListaOrigen(Ticket item)
+        private ObservableCollection<Tasca> BuscarListaOrigen(Tasca item)
         {
             if (TicketsPendientes.Contains(item))
             {
@@ -146,23 +177,23 @@ namespace ToDoListTest
             return null;
         }
 
-        private void HandleDrop(object sender, DragEventArgs e)
+        private async void HandleDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(FormatoDatosTicket))
             {
                 // Obtiene el ticket arrastrado
-                Ticket ticketSoltado = e.Data.GetData(FormatoDatosTicket) as Ticket;
+                Tasca ticketSoltado = e.Data.GetData(FormatoDatosTicket) as Tasca;
 
                 if (ticketSoltado == null) return;
 
                 // Identifica la lista de destino
                 ListView listaDestinoView = sender as ListView;
-                ObservableCollection<Ticket> listaDestino = listaDestinoView?.ItemsSource as ObservableCollection<Ticket>;
+                ObservableCollection<Tasca> listaDestino = listaDestinoView?.ItemsSource as ObservableCollection<Tasca>;
 
                 if (listaDestino == null) return;
 
                 // Identifica la lista de origen
-                ObservableCollection<Ticket> listaOrigen = BuscarListaOrigen(ticketSoltado);
+                ObservableCollection<Tasca> listaOrigen = BuscarListaOrigen(ticketSoltado);
 
                 if (listaOrigen == null || listaOrigen == listaDestino) return; // Ya está allí o no existe
 
@@ -170,8 +201,57 @@ namespace ToDoListTest
                 listaOrigen.Remove(ticketSoltado);
                 listaDestino.Add(ticketSoltado);
 
+                if (BuscarListaOrigen(ticketSoltado) == TicketsPendientes)
+                {
+                    await API_REST.Instance.UpdateEstatTascaAsync(ticketSoltado.Codi, 0);
+                }
+                if (BuscarListaOrigen(ticketSoltado) == TicketsEnCurso)
+                {
+                    await API_REST.Instance.UpdateEstatTascaAsync(ticketSoltado.Codi, 1);
+                }
+                if (BuscarListaOrigen(ticketSoltado) == TicketsFinalizados)
+                {
+                    await API_REST.Instance.UpdateEstatTascaAsync(ticketSoltado.Codi, 2);
+                }
+
+                CargarYClasificarTickets();
+
                 e.Handled = true;
             }
+        }
+        private async void Responsables(object sender, RoutedEventArgs e)
+        {
+            NuevoResponsable ventana = new NuevoResponsable();
+            ventana.Owner = this;
+
+            if (ventana.ShowDialog() == true)
+            {
+                CargarYClasificarTickets();
+            }
+        }
+
+        private void NuevaTasca(object sender, RoutedEventArgs e)
+        {
+            NuevaTicket ventanaNuevo = new NuevaTicket();
+            ventanaNuevo.Owner = this;
+
+            if (ventanaNuevo.ShowDialog() == true)
+            {
+                CargarYClasificarTickets();
+            }
+        }
+
+        private async void EliminarUsuario(object sender, RoutedEventArgs e)
+        {
+            if (ListaCompañeros.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecciona un usuario para eliminar.");
+            }
+            else
+            {
+                await API_REST.Instance.DeleteResponsableAsync((int)ListaCompañeros.SelectedValue);
+            }
+            CargarYClasificarTickets();
         }
     }
 }

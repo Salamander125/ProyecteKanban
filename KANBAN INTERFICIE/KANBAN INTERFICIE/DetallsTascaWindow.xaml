@@ -43,18 +43,18 @@
             <!-- ESTAT -->
             <TextBlock Text="Estat:" FontWeight="Bold" Margin="0 10 0 0"/>
             <ComboBox Name="StatusBox">
-                <ComboBoxItem Content="To Do" Tag="{x:Static local:Status.toDo}"/>
-                <ComboBoxItem Content="In Progress" Tag="{x:Static local:Status.enProgres}"/>
-                <ComboBoxItem Content="Done" Tag="{x:Static local:Status.acabat}"/>
+                <ComboBoxItem Content="To Do" Tag="1"/>
+                <ComboBoxItem Content="In Progress" Tag="2"/>
+                <ComboBoxItem Content="Done" Tag="3"/>
             </ComboBox>
 
             <!-- PRIORITAT -->
             <TextBlock Text="Prioritat:" FontWeight="Bold" Margin="0 10 0 0"/>
             <ComboBox Name="PriorityBox">
-                <ComboBoxItem Content="Sense prioritat" Tag="{x:Static local:Prioritat.SensePrioritat}"/>
-                <ComboBoxItem Content="Baixa" Tag="{x:Static local:Prioritat.Baixa}"/>
-                <ComboBoxItem Content="Mitjana" Tag="{x:Static local:Prioritat.Mitja}"/>
-                <ComboBoxItem Content="Alta" Tag="{x:Static local:Prioritat.Alta}"/>
+                <ComboBoxItem Content="Sense prioritat" Tag="0"/>
+                <ComboBoxItem Content="Baixa" Tag="1"/>
+                <ComboBoxItem Content="Mitjana" Tag="2"/>
+                <ComboBoxItem Content="Alta" Tag="3"/>
             </ComboBox>
 
             <!-- RESPONSABLE -->

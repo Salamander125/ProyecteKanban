@@ -21,7 +21,7 @@ namespace KANBAN_INTERFICIE
     {
 
         private PissarraKanban_MainWindow ConnectorDeFinestraPrincipal;
-        private Tiquet instanciaTiquet;
+        private Tasca instanciaTiquet;
 
         //Bool per saber si s'ha modificat algun paràmetre.
         private bool descripcio_Alterada = false;
@@ -30,11 +30,11 @@ namespace KANBAN_INTERFICIE
         private bool responsable_Alterat = false;
 
         private string originalDescription;
-        private Status originalStatus;
-        private Prioritat originalPriority;
+        private int originalStatus;
+        private int originalPriority;
         //private int originalResponsable
 
-        internal DetallsTascaWindow(Tiquet t, PissarraKanban_MainWindow mainWindow)
+        internal DetallsTascaWindow(Tasca t, PissarraKanban_MainWindow mainWindow)
         {
             InitializeComponent();
             /// fes que l'atribut d'aquesta classe apunti al parametre rebut.
@@ -44,20 +44,6 @@ namespace KANBAN_INTERFICIE
             CarregarTiquet();
         }
 
-
-        private void InicialitzarPriorityComboBox(Tiquet tiquet)
-        {
-            foreach (ComboBoxItem item in PriorityBox.Items)
-            {
-                if ((Prioritat)item.Tag == instanciaTiquet.PrioritatTiquet)
-                {
-                    PriorityBox.SelectedItem = item;
-                    break;
-                }
-            }
-        }
-
-
         private void CarregarTiquet()
         {
             //Aqui es defineixen tots els camps del formulari, amb els valors del tiquet que hem obert.
@@ -66,69 +52,20 @@ namespace KANBAN_INTERFICIE
             idText.Text = instanciaTiquet.ObtenirCodi().ToString(); // ID
 
             // Primer es guarda als strings original_ i després es mostra. 
-            if (instanciaTiquet.Description != null)
+            if (instanciaTiquet.descripcio != null)
                 TitolText.Text = instanciaTiquet.ObtenirTitol();
-                if (instanciaTiquet.Description != null)
+                if (instanciaTiquet.descripcio != null)
                 DescriptionText.Text = originalDescription = instanciaTiquet.ObtenirDescripcio(); // DESCRIPCIÓ
             else
                 DescriptionText.Text = "<{Sense Descripció}>";
 
-            if (instanciaTiquet.DataCreacio != null)
-                creationDate.SelectedDate = DateTime.Parse(instanciaTiquet.ObtenirDataCreacio()); // DATA CREACIO
+                creationDate.SelectedDate = instanciaTiquet.ObtenirDataCreacio(); // DATA CREACIO
+                expectedDate.SelectedDate = instanciaTiquet.ObtenirDataEstimadaFinalitzacio();
 
-            if (instanciaTiquet.DataEstimadaFinalitzacio != null) // DATA ESTIMADA FINALITZACIO
-                expectedDate.SelectedDate = DateTime.Parse(instanciaTiquet.ObtenirDataEstimadaFinalitzacio());
-
-            if (instanciaTiquet.Responsable != null)
-                ResponsibleText.Text = instanciaTiquet.ObtenirResponsable(); // RESPONSABLE
+            if (instanciaTiquet.codi_responsable != null)
+                ResponsibleText.Text = instanciaTiquet.ObtenirResponsable().ToString(); // RESPONSABLE
             else
                 ResponsibleText.Text = "<{Responsable Indefinit}>";
-
-            //Tenir seleccionada la prioritat
-            foreach (ComboBoxItem item in PriorityBox.Items)
-            {
-                if ((Prioritat)item.Tag == instanciaTiquet.PrioritatTiquet)
-                {
-                    PriorityBox.SelectedItem = item;
-                    break;
-                }
-            }
-
-            //Tenir seleccionat l'estat
-            foreach (ComboBoxItem item in StatusBox.Items)
-            {
-                if ((Status)item.Tag == instanciaTiquet.Estat)
-                {
-                    StatusBox.SelectedItem = item;
-                    break;
-                }
-            }
-
-            //StatusBox.SelectedIndex = instanciaTiquet.ObtenirPrioritat();
-            //PriorityBox.SelectedIndex = instanciaTiquet.ObtenirEstat();
-
-            originalStatus = instanciaTiquet.Estat;
-            originalPriority = instanciaTiquet.PrioritatTiquet;
-
-            //Switch que depenent de la prioritat, canvia el led de color.
-            //Si no té prioritat, es torna Gris.
-            switch (instanciaTiquet.PrioritatTiquet)
-            {
-                case Prioritat.Alta:
-                    PriorityBox.Background = Brushes.Tomato;
-                    break;
-
-                case Prioritat.Mitja:
-                    PriorityBox.Background = Brushes.Gold;
-                    break;
-
-                case Prioritat.Baixa:
-                    PriorityBox.Background = Brushes.LightGreen;
-                    break;
-                case Prioritat.SensePrioritat:
-                    PriorityBox.Background = Brushes.LightGreen;
-                    break;
-            }
         }
 
 
@@ -136,23 +73,24 @@ namespace KANBAN_INTERFICIE
         {
             if (DescriptionText.Text != originalDescription)
                 instanciaTiquet.CanviarDescripcio(DescriptionText.Text);
-            if (PriorityBox.SelectedIndex != (int)originalPriority)
-                instanciaTiquet.CanviarPrioritat((Prioritat)PriorityBox.SelectedIndex);
-            if (StatusBox.SelectedIndex != (int)originalStatus)
-                instanciaTiquet.CanviarEstat((Status)StatusBox.SelectedIndex);
-            this.Close();
+            if (PriorityBox.SelectedIndex != originalPriority)
+                instanciaTiquet.CanviarPrioritat(PriorityBox.SelectedIndex);
+            if (StatusBox.SelectedIndex != originalStatus)
+                instanciaTiquet.CanviarEstat(StatusBox.SelectedIndex);
+            Close();
         }
 
 
-        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        private async Task DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult eleccioMessageBox_Si_No = MessageBox.Show("Estas segur de que vols borrar aquesta tasca?", "Borrar Tasca", MessageBoxButton.YesNo, MessageBoxImage.Warning);
 
             switch (eleccioMessageBox_Si_No)
             {
                 case MessageBoxResult.Yes:
-                    ConnectorDeFinestraPrincipal.BorrarTiquet(instanciaTiquet as Tiquet);
-                    this.Close();
+                    ConnectorDeFinestraPrincipal.BorrarTiquet(instanciaTiquet);
+                    await API_REST.Instance.DeleteTascaAsync(instanciaTiquet.ObtenirCodi());
+                    Close();
                     break;
                 case MessageBoxResult.No:
                     break;
@@ -170,37 +108,6 @@ namespace KANBAN_INTERFICIE
             status_Alterat = true;
         }
 
-
-        // Canviar el color del ComboBox quan es canvia la prioritat
-        private void PriorityBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            prioritat_Alterada = true;
-            switch ((Prioritat)PriorityBox.SelectedIndex)
-            {
-                case Prioritat.Alta:
-                    PriorityBox.Background = Brushes.Tomato;
-                    break;
-
-                case Prioritat.Mitja:
-                    PriorityBox.Background = Brushes.Gold;
-                    break;
-
-                case Prioritat.Baixa:
-                    PriorityBox.Background = Brushes.LightGreen;
-                    break;
-                case Prioritat.SensePrioritat:
-                    PriorityBox.Background = Brushes.LightGray;
-                    break;
-                default:
-                    PriorityBox.Background = Brushes.LightGray;
-                    break;
-            }
-        }
-
-
-
-        // Si l'usuari intenta tancar la finestra i te canvis sense guardar...
-        /// Quan es crida "this.Close()", tambe es crida aquesta funcio:
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             if (status_Alterat || responsable_Alterat || descripcio_Alterada)
@@ -223,6 +130,5 @@ namespace KANBAN_INTERFICIE
 
 
         }
-
     }
 }

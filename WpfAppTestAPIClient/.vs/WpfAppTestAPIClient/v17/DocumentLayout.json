@@ -1,53 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\",
+  "WorkspaceRootPath": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\model\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\model\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\model\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\model\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\apiclient\\usersapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\apiclient\\usersapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowdatagrid.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowdatagrid.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowedituser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowedituser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowlistbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowlistbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowdatagrid.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowdatagrid.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowedituser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowedituser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\david\\downloads\\wpfapptestapiclient-20251216t153429z-3-001\\wpfapptestapiclient\\wpfapptestapiclient\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\apiclient\\usersapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\apiclient\\usersapiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\model\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\model\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\model\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\model\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowdatagrid.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowdatagrid.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowedituser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowedituser.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowlistbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowlistbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowdatagrid.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowdatagrid.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\view\\windowedituser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\view\\windowedituser.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\wpfapptestapiclient\\wpfapptestapiclient\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A963A0FD-3D8C-4F43-AF9F-796DFC5DBA79}|WpfAppTestAPIClient\\WpfAppTestAPIClient.csproj|solutionrelative:wpfapptestapiclient\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -58,142 +58,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 12,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Tasca.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\Model\\Tasca.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\Model\\Tasca.cs",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\Model\\Tasca.cs",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\Model\\Tasca.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\Model\\Tasca.cs",
               "RelativeToolTip": "WpfAppTestAPIClient\\Model\\Tasca.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T18:03:05.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "WindowDataGrid.xaml",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowDataGrid.xaml",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowDataGrid.xaml",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\WindowDataGrid.xaml",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowDataGrid.xaml",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowDataGrid.xaml",
               "RelativeToolTip": "WpfAppTestAPIClient\\View\\WindowDataGrid.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T16:44:55.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T16:44:55.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "WindowListBox.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowListBox.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowListBox.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\WindowListBox.xaml.cs",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowListBox.xaml.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowListBox.xaml.cs",
               "RelativeToolTip": "WpfAppTestAPIClient\\View\\WindowListBox.xaml.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAACQAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:44:48.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T16:44:48.177Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "WindowEditUser.xaml",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowEditUser.xaml",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowEditUser.xaml",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\WindowEditUser.xaml",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowEditUser.xaml",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowEditUser.xaml",
               "RelativeToolTip": "WpfAppTestAPIClient\\View\\WindowEditUser.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T16:42:26.459Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WindowDataGrid.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowDataGrid.xaml.cs",
-              "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\WindowDataGrid.xaml.cs",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowDataGrid.xaml.cs",
-              "RelativeToolTip": "WpfAppTestAPIClient\\View\\WindowDataGrid.xaml.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAwFMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:40:10.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T16:42:26.459Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WindowEditUser.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowEditUser.xaml.cs",
-              "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\WindowEditUser.xaml.cs",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowEditUser.xaml.cs",
-              "RelativeToolTip": "WpfAppTestAPIClient\\View\\WindowEditUser.xaml.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAAwEcAAAAoAAAAAAAAAA==",
+              "Title": "WindowDataGrid.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowDataGrid.xaml.cs",
+              "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\WindowDataGrid.xaml.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowDataGrid.xaml.cs",
+              "RelativeToolTip": "WpfAppTestAPIClient\\View\\WindowDataGrid.xaml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAwFMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:39:39.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T16:40:10.013Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "WindowEditUser.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowEditUser.xaml.cs",
+              "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\WindowEditUser.xaml.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\WindowEditUser.xaml.cs",
+              "RelativeToolTip": "WpfAppTestAPIClient\\View\\WindowEditUser.xaml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwEcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T16:39:39.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Responsable.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\Model\\Responsable.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\Model\\Responsable.cs",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\Model\\Responsable.cs",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\Model\\Responsable.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\Model\\Responsable.cs",
               "RelativeToolTip": "WpfAppTestAPIClient\\Model\\Responsable.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T16:27:22.251Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfAppTestAPIClient\\View\\MainWindow.xaml.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAwD8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:19:59.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T16:19:59.182Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\AssemblyInfo.cs",
               "RelativeToolTip": "WpfAppTestAPIClient\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:19:55.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T16:19:55.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\App.config",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\App.config",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\App.config",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\App.config",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\App.config",
               "RelativeToolTip": "WpfAppTestAPIClient\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -202,25 +195,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\View\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\View\\MainWindow.xaml",
               "RelativeToolTip": "WpfAppTestAPIClient\\View\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T15:41:14.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T15:41:14.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UsersApiClient.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\APIClient\\UsersApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\APIClient\\UsersApiClient.cs",
               "RelativeDocumentMoniker": "WpfAppTestAPIClient\\APIClient\\UsersApiClient.cs",
-              "ToolTip": "C:\\Users\\david\\Downloads\\WpfAppTestAPIClient-20251216T153429Z-3-001\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\APIClient\\UsersApiClient.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\WpfAppTestAPIClient\\WpfAppTestAPIClient\\APIClient\\UsersApiClient.cs",
               "RelativeToolTip": "WpfAppTestAPIClient\\APIClient\\UsersApiClient.cs",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAUwPgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADYBAAAAAAAAAAAwwEoBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T15:40:51.168Z",
               "EditorCaption": ""

@@ -13,5 +13,24 @@ namespace ToDoListTest
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            Login loginWindow = new Login();
+            if (loginWindow.ShowDialog() == true)
+            {
+                MainWindow main = new MainWindow();
+                MainWindow = main;
+
+                ShutdownMode = ShutdownMode.OnMainWindowClose;
+
+                main.Show();
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
+        }
     }
 }

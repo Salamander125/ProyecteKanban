@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WpfAppTestAPIClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+befa90af2118d7cb92b7dc32901604a6f47fe11b")]
 [assembly: System.Reflection.AssemblyProductAttribute("WpfAppTestAPIClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WpfAppTestAPIClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

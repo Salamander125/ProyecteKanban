@@ -1,42 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\",
+  "WorkspaceRootPath": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\gestioresponsables.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\gestioresponsables.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\afegirtascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\afegirtascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\gestioresponsables.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\gestioresponsables.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\detallstascawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\detallstascawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\afegirtascawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\afegirtascawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\pissarrakanban_mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\pissarrakanban_mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\pissarrakanban_mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\pissarrakanban_mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\detallstascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\detallstascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\detallstascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\userino\\documents\\insti_campalans_2025\\projecte\\kanban interficie backup 2 (borrar tasca funciona)\\kanban interficie\\afegirtascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\afegirtascawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\afegirtascawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\afegirtascawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\pissarrakanban_mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\pissarrakanban_mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\controldedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\controldedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\model\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\model\\tasca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|c:\\users\\carus\\source\\repos\\proyectekanban\\kanban interficie\\kanban interficie\\services\\api_rest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C3F8411-463D-406E-910E-12FDB318BEF3}|KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj|solutionrelative:kanban interficie\\services\\api_rest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,113 +58,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Responsable.cs",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\Responsable.cs",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\Responsable.cs",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\Responsable.cs",
-              "RelativeToolTip": "KANBAN INTERFICIE\\Responsable.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwCgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T18:05:57.967Z",
+              "DocumentIndex": 3,
+              "Title": "AfegirTascaWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\AfegirTascaWindow.xaml",
+              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\AfegirTascaWindow.xaml",
+              "RelativeToolTip": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-19T10:30:00.867Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GestioResponsables.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\GestioResponsables.xaml.cs",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\GestioResponsables.xaml.cs",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\GestioResponsables.xaml.cs",
-              "RelativeToolTip": "KANBAN INTERFICIE\\GestioResponsables.xaml.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAgwJUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T18:04:30.53Z",
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\App.config",
+              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\App.config",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\App.config",
+              "RelativeToolTip": "KANBAN INTERFICIE\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-19T10:04:40.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GestioResponsables.xaml",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\GestioResponsables.xaml",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\GestioResponsables.xaml",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\GestioResponsables.xaml",
-              "RelativeToolTip": "KANBAN INTERFICIE\\GestioResponsables.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T18:00:36.873Z",
+              "Title": "AfegirTascaWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
+              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
+              "RelativeToolTip": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswCUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:34:42.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AfegirTascaWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\AfegirTascaWindow.xaml",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\AfegirTascaWindow.xaml",
-              "RelativeToolTip": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T16:03:32.796Z",
+              "DocumentIndex": 1,
+              "Title": "DetallsTascaWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
+              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
+              "RelativeToolTip": "KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAUwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:21:23.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tasca.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\Model\\Tasca.cs",
+              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\Model\\Tasca.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\Model\\Tasca.cs",
+              "RelativeToolTip": "KANBAN INTERFICIE\\Model\\Tasca.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwBEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T08:49:24.273Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PissarraKanban_MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml.cs",
-              "RelativeToolTip": "KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml.cs",
-              "ViewState": "AgIAAL8AAAAAAAAAAAASwOAAAAAcAAAAAAAAAA==",
+              "Title": "ControlDeDatos.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\ControlDeDatos.cs",
+              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\ControlDeDatos.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\ControlDeDatos.cs",
+              "RelativeToolTip": "KANBAN INTERFICIE\\ControlDeDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T15:46:57.509Z"
+              "WhenOpened": "2025-12-19T08:48:41.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PissarraKanban_MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml",
-              "RelativeToolTip": "KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T01:01:53.201Z",
+              "DocumentIndex": 4,
+              "Title": "PissarraKanban_MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml.cs",
+              "RelativeToolTip": "KANBAN INTERFICIE\\PissarraKanban_MainWindow.xaml.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAADwv2QAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T08:45:29.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "DetallsTascaWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
-              "RelativeToolTip": "KANBAN INTERFICIE\\DetallsTascaWindow.xaml.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAmwGkAAAAAAAAAAAAAAA==",
+              "Title": "API_REST.cs",
+              "DocumentMoniker": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\Services\\API_REST.cs",
+              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\Services\\API_REST.cs",
+              "ToolTip": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\Services\\API_REST.cs",
+              "RelativeToolTip": "KANBAN INTERFICIE\\Services\\API_REST.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwBMAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:45:20.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DetallsTascaWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\DetallsTascaWindow.xaml",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\DetallsTascaWindow.xaml",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\DetallsTascaWindow.xaml",
-              "RelativeToolTip": "KANBAN INTERFICIE\\DetallsTascaWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-16T15:08:58.452Z",
+              "WhenOpened": "2025-12-19T08:34:43.982Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AfegirTascaWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
-              "RelativeDocumentMoniker": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
-              "RelativeToolTip": "KANBAN INTERFICIE\\AfegirTascaWindow.xaml.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAkwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T16:07:52.524Z"
             }
           ]
         },

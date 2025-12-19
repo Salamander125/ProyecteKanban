@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\carus\source\repos\ToDoListTest\ToDoListTest\obj\Debug\
+C:\Users\carus\source\repos\ProyecteKanban\ToDoListTest\ToDoListTest\obj\Debug\
 ToDoListTest
 none
 false
 DEBUG;TRACE
-C:\Users\carus\source\repos\ToDoListTest\ToDoListTest\App.xaml
-2-1554202576
+C:\Users\carus\source\repos\ProyecteKanban\ToDoListTest\ToDoListTest\App.xaml
+5-1200043195
 
-7-336260369
-13-38814620
-Eliminar.xaml;MainWindow.xaml;
+14-668282976
+24-1876667144
+Eliminar.xaml;Login.xaml;MainWindow.xaml;NuevaTicket.xaml;NuevoResponsable.xaml;
 
 True
 

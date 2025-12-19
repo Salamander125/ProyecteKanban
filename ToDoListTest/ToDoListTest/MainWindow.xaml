@@ -10,201 +10,478 @@
     Height="600"
     Background="#F5F5F5"
     mc:Ignorable="d">
+
+
+
     <Window.Resources>
-        <!--  Estilos para los encabezados de columna  -->
+
         <Style x:Key="ColumnHeaderStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="22" />
+
+            <Setter Property="FontSize" Value="20" />
+
             <Setter Property="FontWeight" Value="SemiBold" />
+
             <Setter Property="Margin" Value="10" />
+
             <Setter Property="Foreground" Value="#333333" />
+
         </Style>
-        <!--  Estilo base para las ListViews  -->
-        <Style TargetType="ListView">
-            <Setter Property="Margin" Value="10" />
-            <Setter Property="Background" Value="#FFFFFF" />
-            <Setter Property="BorderBrush" Value="#DDDDDD" />
-            <Setter Property="BorderThickness" Value="1" />
-            <Setter Property="AllowDrop" Value="True" />
-            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
-        </Style>
-        <!--  Estilo para los elementos de la lista (dentro del DataTemplate)  -->
-        <Style TargetType="Button">
-            <Setter Property="HorizontalAlignment" Value="Stretch" />
-            <Setter Property="Margin" Value="5" />
-            <Setter Property="Padding" Value="10" />
-            <Setter Property="Background" Value="#E0F7FA" />
-            <Setter Property="BorderBrush" Value="#00BCD4" />
-            <Setter Property="BorderThickness" Value="1" />
+
+
+
+        <Style x:Key="FullWidthListViewItem" TargetType="ListViewItem">
+
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+
+            <Setter Property="Padding" Value="0" />
+
+            <Setter Property="Margin" Value="0,4" />
+
+            <Setter Property="Background" Value="Transparent" />
+
             <Setter Property="Template">
+
                 <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border
-                            Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}"
-                            CornerRadius="5">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                        </Border>
+
+                    <ControlTemplate TargetType="ListViewItem">
+
+                        <ContentPresenter />
+
                     </ControlTemplate>
+
                 </Setter.Value>
+
             </Setter>
+
         </Style>
+
+
+
+        <Style TargetType="ListView">
+
+            <Setter Property="Margin" Value="10" />
+
+            <Setter Property="Background" Value="Transparent" />
+
+            <Setter Property="BorderThickness" Value="0" />
+
+            <Setter Property="AllowDrop" Value="True" />
+
+            <Setter Property="VirtualizingStackPanel.IsVirtualizing" Value="True" />
+
+            <Setter Property="VirtualizingStackPanel.VirtualizationMode" Value="Recycling" />
+
+        </Style>
+
     </Window.Resources>
 
+
+
     <Grid>
-        <!--  4 Columnas: To Do | In Progress | Done | Creation Form  -->
+
         <Grid.ColumnDefinitions>
+
             <ColumnDefinition Width="*" />
+
             <ColumnDefinition Width="*" />
+
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="0.75*" />
+
+            <ColumnDefinition Width="220" />
+
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0">
-            <TextBlock Style="{StaticResource ColumnHeaderStyle}" Text="1. Tickets Pendientes (To Do)" />
-            <ListView
-                Name="ListaTickets"
-                Height="500"
-                DragOver="ListView_DragOver"
-                Drop="HandleDrop"
-                MouseMove="ListView_MouseMove"
-                PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Border MouseLeftButtonUp="AccesoNuevaVentana">
-                            <StackPanel MinWidth="280">
-                                <TextBlock FontWeight="Bold" Text="{Binding Title}" />
-                                <TextBlock
-                                    FontSize="11"
-                                    FontStyle="Italic"
-                                    Foreground="#555"
-                                    Text="{Binding Description}"
-                                    TextWrapping="Wrap" />
-                                <TextBlock
-                                    FontSize="10"
-                                    Foreground="#AAA"
-                                    Text="{Binding Codigo}"
-                                    TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Border>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackPanel>
 
-        <!--  COLUMNA 2: EN CURSO (ListaEnCurso)  -->
-        <StackPanel Grid.Column="1">
-            <TextBlock Style="{StaticResource ColumnHeaderStyle}" Text="2. Tickets En Curso (In Progress)" />
-            <ListView
-                Name="ListaEnCurso"
-                Height="500"
-                DragOver="ListView_DragOver"
-                Drop="HandleDrop"
-                MouseMove="ListView_MouseMove"
-                PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Border
-                            Background="#FFF9C4"
-                            BorderBrush="#FBC02D"
-                            MouseLeftButtonUp="AccesoNuevaVentana">
-                            <StackPanel MinWidth="280">
-                                <TextBlock FontWeight="Bold" Text="{Binding Title}" />
-                                <TextBlock
-                                    FontSize="11"
-                                    FontStyle="Italic"
-                                    Foreground="#555"
-                                    Text="{Binding Description}"
-                                    TextWrapping="Wrap" />
-                                <TextBlock
-                                    FontSize="10"
-                                    Foreground="#AAA"
-                                    Text="{Binding Codigo}"
-                                    TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Border>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackPanel>
 
-        <!--  COLUMNA 3: FINALIZADOS (ListaFinalizados)  -->
-        <StackPanel Grid.Column="2">
-            <TextBlock Style="{StaticResource ColumnHeaderStyle}" Text="3. Tickets Finalizados (Done)" />
-            <ListView
-                Name="ListaFinalizados"
-                Height="500"
-                DragOver="ListView_DragOver"
-                Drop="HandleDrop"
-                MouseMove="ListView_MouseMove"
-                PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Border
-                            Background="#C8E6C9"
-                            BorderBrush="#4CAF50"
-                            MouseLeftButtonUp="AccesoNuevaVentana">
-                            <StackPanel MinWidth="280">
-                                <TextBlock
-                                    FontWeight="Bold"
-                                    Text="{Binding Title}"
-                                    TextDecorations="Strikethrough" />
-                                <TextBlock
-                                    FontSize="11"
-                                    FontStyle="Italic"
-                                    Foreground="#555"
-                                    Text="{Binding Description}"
-                                    TextWrapping="Wrap" />
-                                <TextBlock
-                                    FontSize="10"
-                                    Foreground="#AAA"
-                                    Text="{Binding Codigo}"
-                                    TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Border>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackPanel>
+        <Border
+            Grid.Column="0"
+            Margin="5"
+            Background="#EBECF0"
+            CornerRadius="8">
+
+            <DockPanel>
+
+                <TextBlock
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource ColumnHeaderStyle}"
+                    Text="Pendientes" />
+
+                <ListView
+                    Name="ListaTickets"
+                    DragOver="ListView_DragOver"
+                    Drop="HandleDrop"
+                    ItemContainerStyle="{StaticResource FullWidthListViewItem}"
+                    ItemsSource="{Binding TicketsPendientes}"
+                    MouseMove="ListView_MouseMove"
+                    PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="2" Padding="12" Background="White" BorderBrush="#DDD" BorderThickness="1" CornerRadius="5" MouseLeftButtonUp="AccesoNuevaVentana">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0" VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Titol}" TextWrapping="Wrap">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Estat}" Value="2">
+                                                        <Setter Property="TextDecorations" Value="Strikethrough" />
+                                                        <Setter Property="Foreground" Value="#777" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,0,0">
+
+                                        <Ellipse Width="10" Height="10" Margin="0,0,5,0" VerticalAlignment="Center">
+                                            <Ellipse.Style>
+                                                <Style TargetType="Ellipse">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="0">
+                                                            <Setter Property="Fill" Value="Green" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="1">
+                                                            <Setter Property="Fill" Value="Orange" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="2">
+                                                            <Setter Property="Fill" Value="Red" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="3">
+                                                            <Setter Property="Fill" Value="Purple" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Ellipse.Style>
+                                        </Ellipse>
+
+                                        <TextBlock FontSize="11" Foreground="#999" VerticalAlignment="Center" Text="{Binding Codi, StringFormat='#{0}'}" />
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+            </DockPanel>
+
+        </Border>
+
+
+
+        <Border
+            Grid.Column="1"
+            Margin="5"
+            Background="#EBECF0"
+            CornerRadius="8">
+
+            <DockPanel>
+
+                <TextBlock
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource ColumnHeaderStyle}"
+                    Text="En Curso" />
+
+                <ListView
+                    Name="ListaEnCurso"
+                    DragOver="ListView_DragOver"
+                    Drop="HandleDrop"
+                    ItemContainerStyle="{StaticResource FullWidthListViewItem}"
+                    ItemsSource="{Binding TicketsEnCurso}"
+                    MouseMove="ListView_MouseMove"
+                    PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="2" Padding="12" Background="White" BorderBrush="#DDD" BorderThickness="1" CornerRadius="5" MouseLeftButtonUp="AccesoNuevaVentana">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0" VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Titol}" TextWrapping="Wrap">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Estat}" Value="2">
+                                                        <Setter Property="TextDecorations" Value="Strikethrough" />
+                                                        <Setter Property="Foreground" Value="#777" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,0,0">
+
+                                        <Ellipse Width="10" Height="10" Margin="0,0,5,0" VerticalAlignment="Center">
+                                            <Ellipse.Style>
+                                                <Style TargetType="Ellipse">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="0">
+                                                            <Setter Property="Fill" Value="Green" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="1">
+                                                            <Setter Property="Fill" Value="Orange" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="2">
+                                                            <Setter Property="Fill" Value="Red" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="3">
+                                                            <Setter Property="Fill" Value="Purple" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Ellipse.Style>
+                                        </Ellipse>
+
+                                        <TextBlock FontSize="11" Foreground="#999" VerticalAlignment="Center" Text="{Binding Codi, StringFormat='#{0}'}" />
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </DockPanel>
+
+        </Border>
+
+
+
+        <Border
+            Grid.Column="2"
+            Margin="5"
+            Background="#EBECF0"
+            CornerRadius="8">
+
+            <DockPanel>
+
+                <TextBlock
+                    DockPanel.Dock="Top"
+                    Style="{StaticResource ColumnHeaderStyle}"
+                    Text="Finalizados" />
+
+                <ListView
+                    Name="ListaFinalizados"
+                    DragOver="ListView_DragOver"
+                    Drop="HandleDrop"
+                    ItemContainerStyle="{StaticResource FullWidthListViewItem}"
+                    ItemsSource="{Binding TicketsFinalizados}"
+                    MouseMove="ListView_MouseMove"
+                    PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="2" Padding="12" Background="White" BorderBrush="#DDD" BorderThickness="1" CornerRadius="5" MouseLeftButtonUp="AccesoNuevaVentana">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Column="0" VerticalAlignment="Center" FontWeight="Bold" Text="{Binding Titol}" TextWrapping="Wrap">
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Estat}" Value="2">
+                                                        <Setter Property="TextDecorations" Value="Strikethrough" />
+                                                        <Setter Property="Foreground" Value="#777" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+
+                                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,0,0">
+
+                                        <Ellipse Width="10" Height="10" Margin="0,0,5,0" VerticalAlignment="Center">
+                                            <Ellipse.Style>
+                                                <Style TargetType="Ellipse">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="0">
+                                                            <Setter Property="Fill" Value="Green" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="1">
+                                                            <Setter Property="Fill" Value="Orange" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="2">
+                                                            <Setter Property="Fill" Value="Red" />
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding Prioritat}" Value="3">
+                                                            <Setter Property="Fill" Value="Purple" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Ellipse.Style>
+                                        </Ellipse>
+
+                                        <TextBlock FontSize="11" Foreground="#999" VerticalAlignment="Center" Text="{Binding Codi, StringFormat='#{0}'}" />
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </DockPanel>
+
+        </Border>
+
+
 
         <StackPanel
             Grid.Column="3"
-            Margin="20"
-            Background="#EFEFEF">
+            Margin="15"
+            VerticalAlignment="Top">
+
             <TextBlock
-                Margin="0,0,0,10"
-                FontSize="18"
-                FontWeight="Bold"
-                Foreground="#333">
-                Crear Nueva Tarea
-            </TextBlock>
-
-            <TextBlock Margin="0,5,0,2">Título:</TextBlock>
-            <TextBox
-                Name="IntroTitle"
-                Height="25"
-                Margin="0,0,0,10"
-                Text="Nuevo" />
-
-            <TextBlock Margin="0,5,0,2">Descripción:</TextBlock>
-            <TextBox
-                Name="IntroDescription"
-                Height="70"
                 Margin="0,0,0,15"
-                AcceptsReturn="True"
-                Text=""
-                TextWrapping="Wrap" />
+                FontSize="16"
+                FontWeight="Bold"
+                Foreground="#555"
+                Text="Acciones" />
+
+
 
             <Button
+                Height="50"
+                Margin="0,0,0,10"
+                Background="#0079BF"
+                BorderThickness="0"
+                Click="NuevaTasca"
+                Cursor="Hand">
+
+                <Button.Resources>
+
+                    <Style TargetType="Border">
+
+                        <Setter Property="CornerRadius" Value="8" />
+
+                    </Style>
+
+                </Button.Resources>
+
+                <StackPanel Orientation="Horizontal">
+
+                    <TextBlock
+                        Margin="0,0,8,0"
+                        VerticalAlignment="Center"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        Text="+" />
+
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        FontSize="13"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        Text="Nueva Tarea" />
+
+                </StackPanel>
+
+            </Button>
+
+
+
+            <Button
+                Name="RespBtn"
+                Height="50"
+                Background="#519839"
+                BorderThickness="0"
+                Click="Responsables"
+                Cursor="Hand">
+
+                <Button.Resources>
+
+                    <Style TargetType="Border">
+
+                        <Setter Property="CornerRadius" Value="8" />
+
+                    </Style>
+
+                </Button.Resources>
+
+                <StackPanel Orientation="Horizontal">
+
+                    <TextBlock
+                        Margin="0,0,8,0"
+                        VerticalAlignment="Center"
+                        FontSize="16"
+                        Foreground="White"
+                        Text="👤" />
+
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        FontSize="13"
+                        FontWeight="Bold"
+                        Foreground="White"
+                        Text="Añadir Responsable" />
+
+                </StackPanel>
+
+            </Button>
+
+
+
+            <TextBlock
+                Margin="0,20,0,0"
+                FontSize="11"
+                Foreground="#888"
+                TextAlignment="Center"
+                TextWrapping="Wrap">
+                Gestiona tus tareas y equipo desde este panel lateral.
+            </TextBlock>
+
+            <ListView
+                Name="ListaCompañeros"
                 Width="150"
-                Margin="0,10,0,0"
-                HorizontalAlignment="Center"
-                Background="#FF5722"
-                BorderBrush="#D84315"
-                Click="Button_Click"
-                FontWeight="Bold"
-                Foreground="White">
-                Añadir Tarea
+                Height="250"
+                Margin="5"
+                HorizontalContentAlignment="Center"
+                Background="LightGray"
+                SelectedValuePath="Codi"
+                SelectionMode="Single">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                            Width="120"
+                            Margin="2"
+                            Padding="8"
+                            Background="#C8E6C9"
+                            BorderBrush="#4CAF50"
+                            BorderThickness="1"
+                            CornerRadius="5">
+                            <Grid>
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontWeight="Bold"
+                                    Foreground="#333"
+                                    Text="{Binding usuari}"
+                                    TextWrapping="Wrap" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Button
+                Name="EliminarUsuariobtn"
+                Width="150"
+                Height="30"
+                Click="EliminarUsuario"
+                Cursor="Hand">
+                Eliminar Usuario
             </Button>
         </StackPanel>
     </Grid>

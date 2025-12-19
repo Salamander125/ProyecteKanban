@@ -10,6 +10,8 @@ namespace KANBAN_INTERFICIE
     {
         private PissarraKanban_MainWindow ConnectorDeFinestraPrincipal;
 
+        public object ConnectorFinestraPrincipal { get; private set; }
+
         public AfegirTascaWindow(PissarraKanban_MainWindow instanciaMainWindow)
         {
             InitializeComponent();
@@ -18,10 +20,8 @@ namespace KANBAN_INTERFICIE
         }
 
 
-        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        private async Task SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            int nouCodi = new Random().Next(1000, 9999); // Genera un ID aleatori.
-
             // Estructura que valida que no hi hagin camps Buits
 
             if (string.IsNullOrWhiteSpace(DescriptionBox.Text) || string.IsNullOrWhiteSpace(TitolBox.Text))
@@ -31,53 +31,25 @@ namespace KANBAN_INTERFICIE
             /// Comprova que no hi hagi PRIORITAT/STATUS Null. omple automaticament lo que estigui buit.
             else if (StatusBox.SelectedIndex == -1 || PriorityBox.SelectedIndex == -1) //Si no hi ha res seleccionat...
             {
-                MessageBoxResult eleccioMessageBox_Si_No = MessageBox.Show("No has establert un d'aquests dos camps: PRIORITAT/STATUS. " +
-                    "Si vols puc definir el camp que estigui buit per tu", "Pregunta", MessageBoxButton.YesNo, MessageBoxImage.Question);
-
-                switch (eleccioMessageBox_Si_No)
-                {
-                    case MessageBoxResult.Yes: //Fes que Sigui status ToDo
-                        if (StatusBox.SelectedIndex == -1)
-                        { StatusBox.SelectedIndex = 0; }
-                        if (PriorityBox.SelectedIndex == -1)
-                        { PriorityBox.SelectedIndex = 1; }
-                        //DESPRES GUARDA I TANCA LA FINESTRA AUTOMATICAMENT:
-                        {
-                            Tiquet tiquet_que_sEnvia = new Tiquet(
-                                codi: nouCodi,
-                                responsable: (ResponsibleBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
-                                titol: TitolBox.Text,
-                                descripcio: DescriptionBox.Text,
-                                estat: (Status)StatusBox.SelectedIndex,
-                                dataCreacio: DateTime.Now.ToString("dd/MM/yyyy"),
-                                dataEstimada_Finalitzacio: DataFinalitzacioPicker.SelectedDate?.ToString("dd/MM/yyyy"),
-                                prioritat: (Prioritat)PriorityBox.SelectedIndex);
-
-                            ConnectorDeFinestraPrincipal.AfegirTiquet(tiquet_que_sEnvia);
-                            this.Close();
-                        }
-                        break;
-                    case MessageBoxResult.No:
-                        MessageBox.Show("Pues omple-ho tot, troç de suroooo", "No vols?", MessageBoxButton.OK, MessageBoxImage.Information);
-                        break;
-                }
+                MessageBoxResult eleccioMessageBox_Si_No = MessageBox.Show("No has establert un d'aquests dos camps: PRIORITAT/STATUS. ");
             }
             else
             {
-
-                Tiquet tiquet_que_sEnvia = new Tiquet(
-                    codi: nouCodi,
-                    responsable: (ResponsibleBox.SelectedItem as ComboBoxItem)?.Content.ToString(),
+                Tasca tiquet_que_sEnvia = new Tasca(
+                    responsable: (long?)(ResponsibleBox.SelectedItem as ComboBoxItem)?.Tag,
                     titol: TitolBox.Text,
                     descripcio: DescriptionBox.Text,
-                    estat: (Status)StatusBox.SelectedIndex,
-                    dataCreacio: DateTime.Now.ToString("dd/MM/yyyy"),
-                    dataEstimada_Finalitzacio: DataFinalitzacioPicker.SelectedDate?.ToString("dd/MM/yyyy"),
-                    prioritat: (Prioritat)PriorityBox.SelectedIndex
+                    // IMPORTANTE: Usa el Tag si ahora usas números en el XAML, no el Index
+                    estat: Convert.ToInt32((StatusBox.SelectedItem as ComboBoxItem)?.Tag ?? "1"),
+                    data_creacio: DateTime.Now,
+                    data_finalitzacio: DataFinalitzacioPicker.SelectedDate?.Date ?? DateTime.Today,
+                    prioritat: Convert.ToInt32((PriorityBox.SelectedItem as ComboBoxItem)?.Tag ?? "0")
                 );
 
-                ConnectorDeFinestraPrincipal.AfegirTiquet(tiquet_que_sEnvia);
-                this.Close();
+                // AQUÍ ESTÁ EL TRUCO: Esperar a que la API termine antes de cerrar
+                await ConnectorFinestraPrincipal.AfegirTiquet(tiquet_que_sEnvia);
+
+                this.Close(); // Ahora sí se cierra solo cuando la API confirma recepción
             }
         }
 

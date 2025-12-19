@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Iy9D3OSSQ5k=",
+  "dgSpecHash": "oWIqkMipN0Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\userino\\Documents\\INSTI_CAMPALANS_2025\\Projecte\\KANBAN INTERFICIE BACKUP 2 (Borrar tasca funciona)\\KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\carus\\source\\repos\\ProyecteKanban\\KANBAN INTERFICIE\\KANBAN INTERFICIE\\KANBAN INTERFICIE.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\carus\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.300\\microsoft.net.sdk.compilers.toolset.9.0.300.nupkg.sha512"
+  ],
   "logs": []
 }

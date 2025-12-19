@@ -20,18 +20,18 @@ namespace KANBAN_INTERFICIE
     public partial class PissarraKanban_MainWindow : Window
     {
         //Llistes de cada columna KANBAN. 
-        public ObservableCollection<Tiquet> ColeccioTiquets_ToDo { get; set; }
-        public ObservableCollection<Tiquet> ColeccioTiquets_InProgress { get; set; }
-        public ObservableCollection<Tiquet> ColeccioTiquets_Finished { get; set; }
+        public ObservableCollection<Tasca> ColeccioTiquets_ToDo { get; set; }
+        public ObservableCollection<Tasca> ColeccioTiquets_InProgress { get; set; }
+        public ObservableCollection<Tasca> ColeccioTiquets_Finished { get; set; }
 
         //Variables per el Drag n' Drop
-        private Tiquet TiquetArrossegat = null;
+        private Tasca TiquetArrossegat = null;
         private Point puntInicialArrossegament;
         private const string FormatDadesTiquet = "KANBAN_TICKET";
 
         private bool _isDragging;
         private Point _startPoint;
-        private Tiquet _draggedTiquet;
+        private Tasca _draggedTiquet;
 
 
 
@@ -40,9 +40,9 @@ namespace KANBAN_INTERFICIE
             InitializeComponent();
 
 
-            ColeccioTiquets_ToDo = new ObservableCollection<Tiquet>();
-            ColeccioTiquets_InProgress = new ObservableCollection<Tiquet>();
-            ColeccioTiquets_Finished = new ObservableCollection<Tiquet>();
+            ColeccioTiquets_ToDo = new ObservableCollection<Tasca>();
+            ColeccioTiquets_InProgress = new ObservableCollection<Tasca>();
+            ColeccioTiquets_Finished = new ObservableCollection<Tasca>();
 
             //Fes que els tiquets es guardin a la coleccio, NO al ItemSource del ListView.
             LlistaToDo.ItemsSource = ColeccioTiquets_ToDo;
@@ -54,7 +54,7 @@ namespace KANBAN_INTERFICIE
         private void Card_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             _startPoint = e.GetPosition(null);
-            _draggedTiquet = (sender as Border)?.DataContext as Tiquet;
+            _draggedTiquet = (sender as Border)?.DataContext as Tasca;
             _isDragging = false;
         }
 
@@ -83,7 +83,7 @@ namespace KANBAN_INTERFICIE
         {
             if (_isDragging) return;
 
-            var tiquet = (sender as Border)?.DataContext as Tiquet;
+            var tiquet = (sender as Border)?.DataContext as Tasca;
             if (tiquet != null)
             {
                 new DetallsTascaWindow(tiquet, this).ShowDialog();
@@ -105,34 +105,36 @@ namespace KANBAN_INTERFICIE
         /// Afegeix un tiquet al panell on pertany (ToDo/InProgress/Finished).
         /// </summary>
         /// <param name="tiquet"></param>
-        internal void AfegirTiquet(Tiquet tiquet)
+        internal async Task AfegirTiquetAsync(Tasca tiquet)
         {
             switch (tiquet.estat)
             {
-                case Status.toDo:
+                case 1:
                     ColeccioTiquets_ToDo.Add(tiquet);
                     break;
-                case Status.enProgres:
+                case 2:
                     ColeccioTiquets_InProgress.Add(tiquet);
                     break;
-                case Status.acabat:
+                case 3:
                     ColeccioTiquets_Finished.Add(tiquet);
                     break;
             }
             RefreshKanban();
+
+            await ControlDeDatos.Instance.NuevaTasca(tiquet);
         }
 
-        internal void BorrarTiquet(Tiquet tiquet)
+        internal void BorrarTiquet(Tasca tiquet)
         {
             switch (tiquet.estat)
             {
-                case Status.toDo:
+                case 1:
                     ColeccioTiquets_ToDo.Remove(tiquet);
                     break;
-                case Status.enProgres:
+                case 2:
                     ColeccioTiquets_InProgress.Remove(tiquet);
                     break;
-                case Status.acabat:
+                case 3:
                     ColeccioTiquets_Finished.Remove(tiquet);
                     break;
             }
@@ -177,7 +179,7 @@ namespace KANBAN_INTERFICIE
         }
 
         // 4. Busca la colección de origen del Tiquet que se está arrastrando
-        private ObservableCollection<Tiquet> BuscarListaOrigen(Tiquet el_tiquet)
+        private ObservableCollection<Tasca> BuscarListaOrigen(Tasca el_tiquet)
         {
             if (ColeccioTiquets_ToDo.Contains(el_tiquet))
             {
@@ -199,16 +201,16 @@ namespace KANBAN_INTERFICIE
             if (e.Data.GetDataPresent(FormatDadesTiquet))
             {
                 // Obtiene el Tiquet arrastrado
-                Tiquet TiquetSoltado = e.Data.GetData(FormatDadesTiquet) as Tiquet;
+                Tasca TiquetSoltado = e.Data.GetData(FormatDadesTiquet) as Tasca;
                 if (TiquetSoltado == null) return;
 
                 // Identifica la lista de destino
                 ListView listaDestinoView = sender as ListView;
-                ObservableCollection<Tiquet> listaDestino = listaDestinoView?.ItemsSource as ObservableCollection<Tiquet>;
+                ObservableCollection<Tasca> listaDestino = listaDestinoView?.ItemsSource as ObservableCollection<Tasca>;
                 if (listaDestino == null) return;
 
                 // Identifica la lista de origen
-                ObservableCollection<Tiquet> listaOrigen = BuscarListaOrigen(TiquetSoltado);
+                ObservableCollection<Tasca> listaOrigen = BuscarListaOrigen(TiquetSoltado);
                 if (listaOrigen == null || listaOrigen == listaDestino) return;
 
                 // Quitar del origen y añadir al destino
@@ -216,9 +218,9 @@ namespace KANBAN_INTERFICIE
                 listaDestino.Add(TiquetSoltado);
 
                 // 🔹 Actualiza l'estat segons la columna de destinació
-                if (listaDestino == ColeccioTiquets_ToDo) TiquetSoltado.CanviarEstat(Status.toDo);
-                else if (listaDestino == ColeccioTiquets_InProgress) TiquetSoltado.CanviarEstat(Status.enProgres);
-                else if (listaDestino == ColeccioTiquets_Finished) TiquetSoltado.CanviarEstat(Status.acabat);
+                if (listaDestino == ColeccioTiquets_ToDo) TiquetSoltado.CanviarEstat(1);
+                else if (listaDestino == ColeccioTiquets_InProgress) TiquetSoltado.CanviarEstat(2);
+                else if (listaDestino == ColeccioTiquets_Finished) TiquetSoltado.CanviarEstat(3);
 
                 e.Handled = true;
             }
